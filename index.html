@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StockWatch</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">Stock<span>Watch</span></div>
+    <span id="updated-at"></span>
+  </header>
+
+  <!-- Add-stock bar -->
+  <div class="add-bar">
+    <input id="ticker-input" type="text" maxlength="10" placeholder="Ticker (e.g. AAPL)" />
+    <button id="add-btn">Add stock</button>
+    <span class="add-hint">Saved in your browser — persists across visits.</span>
+  </div>
+
+  <div id="error">
+    Could not load agent data. Run the scheduled agent at least once to generate
+    <code>data/stocks.json</code>, then commit &amp; push.
+  </div>
+
+  <!-- User-tracked (live) -->
+  <section id="tracked-section" style="display:none">
+    <h2>Tracked <span class="count" id="tracked-count">0</span></h2>
+    <div class="grid" id="tracked-grid"></div>
+  </section>
+
+  <!-- Agent sections -->
+  <section>
+    <h2>My Watchlist</h2>
+    <div class="grid" id="watchlist-grid"></div>
+  </section>
+
+  <section>
+    <h2>Sector Picks — Tech &amp; ETFs</h2>
+    <div class="grid" id="sector-grid"></div>
+  </section>
+
+  <section>
+    <h2>Claude's Picks</h2>
+    <div class="grid picks-grid" id="picks-grid"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "tickers": [
+    "AAPL",
+    "MSFT",
+    "NVDA",
+    "TSLA",
+    "AMZN"
+  ],
+  "note": "Edit this file to match your Revolut watchlist. Use uppercase ticker symbols."
+}
