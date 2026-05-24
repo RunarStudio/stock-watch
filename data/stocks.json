@@ -1,50 +1,50 @@
 {
-  "updated_at": "2026-05-24T19:00:00Z",
+  "updated_at": "2026-05-24T20:00:00Z",
   "watchlist": [
-    { "ticker": "AMD",    "name": "Advanced Micro Devices", "price": 462.81, "change_pct": 3.22 },
-    { "ticker": "CRM",    "name": "Salesforce Inc.",        "price": 180.07, "change_pct": -0.8 },
-    { "ticker": "RDDT",   "name": "Reddit Inc.",            "price": 141.10, "change_pct": -6.5 },
-    { "ticker": "NFLX",   "name": "Netflix Inc.",           "price": 88.39,  "change_pct": -1.8 },
-    { "ticker": "AOF.DE", "name": "ATOSS Software SE (€)",  "price": 71.80,  "change_pct": 0.42 },
-    { "ticker": "ORGN",   "name": "Origin Materials",       "price": 1.24,   "change_pct": -2.4 },
-    { "ticker": "AARD",   "name": "Aardvark Therapeutics",  "price": 4.50,   "change_pct": -5.1 }
+    { "ticker": "AMD",    "name": "Advanced Micro Devices", "price": 467.51, "change_pct":  3.22 },
+    { "ticker": "CRM",    "name": "Salesforce Inc.",        "price": 180.07, "change_pct": -0.80 },
+    { "ticker": "RDDT",   "name": "Reddit Inc.",            "price": 141.10, "change_pct": -6.50 },
+    { "ticker": "NFLX",   "name": "Netflix Inc.",           "price": 88.39,  "change_pct": -1.80 },
+    { "ticker": "AOF.DE", "name": "ATOSS Software SE (€)",  "price": 97.50,  "change_pct": -0.51 },
+    { "ticker": "ORGN",   "name": "Origin Materials",       "price": 1.24,   "change_pct": -2.40 },
+    { "ticker": "AARD",   "name": "Aardvark Therapeutics",  "price": 4.50,   "change_pct": -5.10 }
   ],
   "sector_picks": [
-    { "ticker": "NVDA",  "name": "NVIDIA Corp.",        "price": 225.50, "change_pct": 1.8,  "sector": "AI/Chips" },
-    { "ticker": "MU",    "name": "Micron Technology",   "price": 187.40, "change_pct": 2.9,  "sector": "AI/Memory" },
-    { "ticker": "CRWV",  "name": "CoreWeave Inc.",      "price": 104.30, "change_pct": -1.2, "sector": "AI Infra" },
-    { "ticker": "NEE",   "name": "NextEra Energy",      "price": 89.04,  "change_pct": 0.6,  "sector": "Green Energy" },
-    { "ticker": "BE",    "name": "Bloom Energy",        "price": 28.70,  "change_pct": 1.4,  "sector": "Green Energy" },
-    { "ticker": "CSIQ",  "name": "Canadian Solar Inc.", "price": 14.20,  "change_pct": 0.9,  "sector": "Solar" }
+    { "ticker": "NVDA",  "name": "NVIDIA Corp.",        "price": 215.33, "change_pct":  1.80, "sector": "AI/Chips" },
+    { "ticker": "MU",    "name": "Micron Technology",   "price": 751.00, "change_pct":  2.90, "sector": "AI/Memory" },
+    { "ticker": "CRWV",  "name": "CoreWeave Inc.",      "price": 104.30, "change_pct": -1.20, "sector": "AI Infra" },
+    { "ticker": "NEE",   "name": "NextEra Energy",      "price": 88.55,  "change_pct": -1.27, "sector": "Green Energy" },
+    { "ticker": "BE",    "name": "Bloom Energy",        "price": 28.70,  "change_pct":  1.40, "sector": "Green Energy" },
+    { "ticker": "CSIQ",  "name": "Canadian Solar Inc.", "price": 14.20,  "change_pct":  0.90, "sector": "Solar" }
   ],
   "claude_picks": [
     {
-      "ticker": "MU",
-      "name": "Micron Technology",
-      "price": 187.40,
-      "change_pct": 2.9,
-      "reasoning": "Up 182% YTD — AI memory supercycle is real, supply tight through 2027. Strongest short-term momentum in the AI space right now."
+      "ticker": "NVDA",
+      "name": "NVIDIA Corp.",
+      "price": 215.33,
+      "change_pct": 1.80,
+      "reasoning": "37% analyst upside to $294. At 80% of 52-week range — not overbought. Record earnings May 21. Safest AI anchor for short-term entry."
     },
     {
       "ticker": "CRWV",
       "name": "CoreWeave Inc.",
       "price": 104.30,
-      "change_pct": -1.2,
-      "reasoning": "Down 7% last week but Meta partnership (May 21) is a major catalyst. Analysts see 66% upside. Classic buy-the-dip on a dip that makes no sense long term."
+      "change_pct": -1.20,
+      "reasoning": "Down from highs on guidance fears, 33% upside to analyst target $139. Meta deal is a hard catalyst. Best risk/reward in AI infra right now."
     },
     {
       "ticker": "NEE",
       "name": "NextEra Energy",
-      "price": 89.04,
-      "change_pct": 0.6,
-      "reasoning": "$67B Dominion acquisition, 33GW backlog, 10% dividend increase. Best defensive ecological play with near-term catalyst."
+      "price": 88.55,
+      "change_pct": -1.27,
+      "reasoning": "Pulled back 10% from its May high of $97.88. $67B Dominion deal + 33GW backlog = dip worth buying. Best defensive ecological entry point."
     },
     {
       "ticker": "AOF.DE",
       "name": "ATOSS Software SE (€)",
-      "price": 71.80,
-      "change_pct": 0.42,
-      "reasoning": "Down 52% from peak but 5 analysts say Buy, avg target €126 (+75%). Q1 revenue +11% YoY. Workforce management SaaS with strong recurring revenue — your most undervalued holding."
+      "price": 97.50,
+      "change_pct": -0.51,
+      "reasoning": "Down 34% from €147 peak, analyst consensus target €137 (+40% upside). Revenue +10% YoY, cloud +30%. Your most undervalued current holding."
     }
   ]
 }
