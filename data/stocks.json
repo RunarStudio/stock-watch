@@ -1,5 +1,37 @@
 {
   "updated_at": "2026-05-24T20:00:00Z",
+  "ultra_short": [
+    {
+      "ticker": "AAPL", "name": "Apple Inc.",         "price": 211.00, "change_pct":  1.20,
+      "beta": 1.2,  "weekly_swing_pct": 4,  "risk": "low",
+      "upside_12m_pct": 15, "target_low_pct": -8,  "target_high_pct": 30, "consensus": "Buy",
+      "swing_note": "Highest daily volume on earth. Post-earnings volatility window. Clean weekly structure with clear support/resistance."
+    },
+    {
+      "ticker": "META", "name": "Meta Platforms",     "price": 612.00, "change_pct": -0.80,
+      "beta": 1.5,  "weekly_swing_pct": 6,  "risk": "medium",
+      "upside_12m_pct": 25, "target_low_pct": -12, "target_high_pct": 45, "consensus": "Buy",
+      "swing_note": "Down 8% YTD despite record Q1 earnings (+33% revenue). Oversold bounce pattern forming. Snaps back hard on good news."
+    },
+    {
+      "ticker": "QQQ",  "name": "Invesco QQQ ETF",   "price": 475.00, "change_pct":  0.90,
+      "beta": 1.05, "weekly_swing_pct": 4,  "risk": "low",
+      "upside_12m_pct": 12, "target_low_pct": -10, "target_high_pct": 22, "consensus": "Buy",
+      "swing_note": "Tracks NASDAQ-100 — 100 companies instead of 1. Up +11% in 30 days. Safest swing vehicle: no single stock collapse risk."
+    },
+    {
+      "ticker": "TSLA", "name": "Tesla Inc.",         "price": 412.00, "change_pct":  1.50,
+      "beta": 2.07, "weekly_swing_pct": 10, "risk": "medium",
+      "upside_12m_pct": 15, "target_low_pct": -20, "target_high_pct": 40, "consensus": "Hold",
+      "swing_note": "52-week range $273–$499. Currently mid-range. Classic oscillator: 10%+ weekly swings common. Buy near $380 support, target $450."
+    },
+    {
+      "ticker": "ARM",  "name": "Arm Holdings",      "price": 145.00, "change_pct":  2.10,
+      "beta": 4.18, "weekly_swing_pct": 13, "risk": "high",
+      "upside_12m_pct": 35, "target_low_pct": -25, "target_high_pct": 60, "consensus": "Buy",
+      "swing_note": "Beta 4.18 — moves 4× the market. Extreme weekly swings. High risk, high reward. Only enter with strict stop-loss, small position."
+    }
+  ],
   "watchlist": [
     { "ticker": "AMD",    "name": "Advanced Micro Devices", "price": 467.51, "change_pct":  3.22, "upside_12m_pct":  1.0,  "target_low_pct": -52,  "target_high_pct":  34,  "consensus": "Strong Buy" },
     { "ticker": "CRM",    "name": "Salesforce Inc.",        "price": 180.07, "change_pct": -0.80, "upside_12m_pct": 30.0,  "target_low_pct": -15,  "target_high_pct":  55,  "consensus": "Buy" },

@@ -325,6 +325,79 @@ section h2 .count {
 .ccp-sc-pct.up,  .ccp-sc-gain.up   { color: var(--up); }
 .ccp-sc-pct.down,.ccp-sc-gain.down { color: var(--down); }
 
+/* ── Ultra-short section ── */
+.ultra-heading {
+  color: var(--accent) !important;
+  border-bottom-color: var(--accent-dim) !important;
+}
+
+.ultra-grid {
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
+
+/* beta / risk badges */
+.card-meta {
+  display: flex;
+  gap: 6px;
+  margin-top: 6px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 4px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.badge-beta {
+  background: var(--accent-dim);
+  color: var(--accent);
+}
+
+.badge-risk-low    { background: var(--up-bg);    color: var(--up); }
+.badge-risk-medium { background: #1a1200; color: #f59e0b; }
+.badge-risk-high   { background: var(--down-bg); color: var(--down); }
+
+/* weekly swing bar */
+.swing-bar-wrap {
+  margin-top: 10px;
+}
+
+.swing-bar-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+
+.swing-bar {
+  height: 4px;
+  background: var(--surface-3);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.swing-bar-fill {
+  height: 100%;
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--up), var(--accent));
+}
+
+.swing-note {
+  margin-top: 10px;
+  font-size: 11px;
+  color: var(--muted-2);
+  line-height: 1.55;
+  padding: 9px 11px;
+  background: var(--accent-dim);
+  border-left: 2px solid var(--accent);
+  border-radius: 0 6px 6px 0;
+}
+
 /* ── Remove button (tracked cards) ── */
 .remove-btn {
   position: absolute;

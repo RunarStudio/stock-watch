@@ -122,9 +122,11 @@ document.addEventListener('input', e => {
   const stock  = ticker ? stockMap[ticker] : null;
   if (!stock) return;
 
-  const amount = parseFloat(panel.querySelector('.ccp-amount').value);
-  const months = parseFloat(panel.querySelector('.ccp-months').value);
-  const result = panel.querySelector('.ccp-result');
+  const amount      = parseFloat(panel.querySelector('.ccp-amount').value);
+  const monthsInput = panel.querySelector('.ccp-months');
+  const rawVal      = parseFloat(monthsInput.value);
+  const months      = monthsInput.dataset.unit === 'weeks' ? rawVal / 4.33 : rawVal;
+  const result      = panel.querySelector('.ccp-result');
 
   if (!amount || amount <= 0 || !months || months <= 0) { result.innerHTML = ''; return; }
 
@@ -330,6 +332,58 @@ async function addStock() {
 addBtn.addEventListener('click', addStock);
 tickerInput.addEventListener('keydown', e => { if (e.key === 'Enter') addStock(); });
 
+/* ── Ultra-short card ── */
+function ultraCard(s) {
+  const cur      = s.ticker.includes('.') ? '€' : '$';
+  const hasCalc  = s.upside_12m_pct != null;
+  const riskCls  = { low: 'badge-risk-low', medium: 'badge-risk-medium', high: 'badge-risk-high' }[s.risk] ?? 'badge-risk-medium';
+  const riskLbl  = (s.risk ?? 'medium').charAt(0).toUpperCase() + (s.risk ?? 'medium').slice(1) + ' risk';
+  const swingPct = s.weekly_swing_pct ?? 5;
+
+  return `
+    <div class="card${hasCalc ? ' has-calc' : ''}" data-ticker="${s.ticker}">
+      <div class="card-main">
+        <div class="card-header">
+          <span class="ticker">${s.ticker}</span>
+          ${badge(s.change_pct)}
+        </div>
+        <div class="name">${s.name}</div>
+        <div class="price">${cur}${s.price.toFixed(2)}</div>
+        <div class="card-meta">
+          <span class="badge badge-beta">β ${s.beta ?? '?'}</span>
+          <span class="badge ${riskCls}">${riskLbl}</span>
+        </div>
+        <div class="swing-bar-wrap">
+          <div class="swing-bar-label">
+            <span>Typical weekly swing</span>
+            <span>±${swingPct}%</span>
+          </div>
+          <div class="swing-bar">
+            <div class="swing-bar-fill" style="width:${Math.min(swingPct * 6, 100)}%"></div>
+          </div>
+        </div>
+        ${s.swing_note ? `<div class="swing-note">${s.swing_note}</div>` : ''}
+        ${hasCalc ? `<div class="expand-hint">Simulate investment ↓</div>` : ''}
+      </div>
+      ${hasCalc ? `
+      <div class="card-calc-panel">
+        <div class="ccp-inner">
+          <div class="ccp-inputs">
+            <div class="ccp-field">
+              <label>Amount (${cur})</label>
+              <input class="ccp-amount" type="number" min="1" placeholder="e.g. 200" />
+            </div>
+            <div class="ccp-field">
+              <label>Hold (weeks)</label>
+              <input class="ccp-months" type="number" min="1" max="4" value="2" data-unit="weeks" />
+            </div>
+          </div>
+          <div class="ccp-result"></div>
+        </div>
+      </div>` : ''}
+    </div>`;
+}
+
 /* ── Agent data ── */
 function render(id, items, opts) {
   const el = document.getElementById(id);
@@ -354,8 +408,16 @@ async function loadAgentData() {
     render('sector-grid',   data.sector_picks  || [], { showSector: true });
     render('picks-grid',    data.claude_picks  || [], { showReasoning: true });
 
+    // Ultra-short section
+    const ultraEl    = document.getElementById('ultra-grid');
+    const ultraItems = data.ultra_short || [];
+    ultraEl.innerHTML = ultraItems.length
+      ? ultraItems.map(s => ultraCard(s)).join('')
+      : '<p class="empty-state">No ultra-short picks yet.</p>';
+
     // Register all stocks in the map for calculator lookups
     registerStocks([
+      ...(data.ultra_short   || []),
       ...(data.claude_picks  || []),
       ...(data.watchlist     || []),
       ...(data.sector_picks  || []),
@@ -363,7 +425,7 @@ async function loadAgentData() {
   } catch (err) {
     console.error('[StockWatch] loadAgentData failed:', err);
     document.getElementById('error').style.display = 'block';
-    ['watchlist-grid', 'sector-grid', 'picks-grid'].forEach(id => {
+    ['ultra-grid', 'watchlist-grid', 'sector-grid', 'picks-grid'].forEach(id => {
       document.getElementById(id).innerHTML = '<p class="empty-state">No agent data.</p>';
     });
   }
