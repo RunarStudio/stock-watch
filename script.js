@@ -360,7 +360,8 @@ async function loadAgentData() {
       ...(data.watchlist     || []),
       ...(data.sector_picks  || []),
     ]);
-  } catch {
+  } catch (err) {
+    console.error('[StockWatch] loadAgentData failed:', err);
     document.getElementById('error').style.display = 'block';
     ['watchlist-grid', 'sector-grid', 'picks-grid'].forEach(id => {
       document.getElementById(id).innerHTML = '<p class="empty-state">No agent data.</p>';
