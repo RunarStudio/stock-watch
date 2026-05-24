@@ -1,4 +1,4 @@
 {
-  "tickers": ["ORGN", "AARD", "RDDT", "NFLX", "CRM", "AMD"],
-  "note": "Edit this file to match your Revolut watchlist. AOF omitted — multiple companies share that ticker on different exchanges (DE/AU/UK/NZ). Clarify which and re-add."
+  "tickers": ["ORGN", "AARD", "RDDT", "NFLX", "AOF.DE", "CRM", "AMD"],
+  "note": "AOF = ATOSS Software SE on Xetra. Use AOF.DE for Yahoo Finance API. Other tickers are NYSE/NASDAQ."
 }
