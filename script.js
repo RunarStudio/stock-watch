@@ -138,7 +138,7 @@ input.addEventListener('keydown', e => { if (e.key === 'Enter') addStock(); });
 /* ── Agent-data sections ── */
 async function loadAgentData() {
   try {
-    const res = await fetch('./data/stocks.json');
+    const res = await fetch('./data/stocks.json?v=' + Date.now());
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const data = await res.json();
 
@@ -178,59 +178,51 @@ function render(id, items, opts) {
 }
 
 /* ── Calculator ── */
-let allStocks = []; // populated after agent data loads
+const stockMap = {}; // ticker → { name, price, upside_12m_pct, currency }
 
-const globalMonths  = document.getElementById('global-months');
-const calcMonths    = document.getElementById('calc-months-local');
-const calcStock     = document.getElementById('calc-stock');
-const calcAmount    = document.getElementById('calc-amount');
-const calcResult    = document.getElementById('calc-result');
-const calcNoTarget  = document.getElementById('calc-no-target');
-const calcCurrency  = document.getElementById('calc-currency');
+const globalMonths = document.getElementById('global-months');
+const calcMonths   = document.getElementById('calc-months-local');
+const calcStock    = document.getElementById('calc-stock');
+const calcAmount   = document.getElementById('calc-amount');
+const calcResult   = document.getElementById('calc-result');
+const calcNoTarget = document.getElementById('calc-no-target');
+const calcCurrency = document.getElementById('calc-currency');
 
-// Keep local months input in sync with global header setting
-globalMonths.addEventListener('input', () => {
-  calcMonths.value = globalMonths.value;
-  runCalc();
-});
+globalMonths.addEventListener('input', () => { calcMonths.value = globalMonths.value; runCalc(); });
+calcMonths.addEventListener('input',   () => { globalMonths.value = calcMonths.value;  runCalc(); });
 
-calcMonths.addEventListener('input', () => {
-  globalMonths.value = calcMonths.value;
-  runCalc();
-});
-
-function syncMonthsInit() {
-  calcMonths.value = globalMonths.value;
-}
+function syncMonthsInit() { calcMonths.value = globalMonths.value; }
 
 function populateCalcDropdown(stocks) {
-  // Deduplicate by ticker (picks may repeat sector stocks)
-  const seen = new Set();
   stocks.forEach(s => {
-    if (seen.has(s.ticker)) return;
-    seen.add(s.ticker);
+    if (stockMap[s.ticker]) return; // deduplicate
+    stockMap[s.ticker] = {
+      name:          s.name,
+      price:         s.price,
+      upside_12m_pct: (s.upside_12m_pct != null) ? s.upside_12m_pct : null,
+      currency:      s.ticker.includes('.') ? '€' : '$',
+    };
     const opt = document.createElement('option');
     opt.value = s.ticker;
     opt.textContent = `${s.ticker} — ${s.name}`;
-    opt.dataset.price      = s.price;
-    opt.dataset.upside     = s.upside_12m_pct ?? '';
-    opt.dataset.currency   = s.ticker.includes('.') ? '€' : '$';
     calcStock.appendChild(opt);
   });
 }
 
 function runCalc() {
-  const opt    = calcStock.options[calcStock.selectedIndex];
+  const ticker = calcStock.value;
   const amount = parseFloat(calcAmount.value);
   const months = parseFloat(calcMonths.value);
 
   calcResult.style.display   = 'none';
   calcNoTarget.style.display = 'none';
 
-  if (!opt || !opt.value || !amount || amount <= 0 || !months || months <= 0) return;
+  if (!ticker || !amount || amount <= 0 || !months || months <= 0) return;
 
-  const upside12m = opt.dataset.upside === '' ? null : parseFloat(opt.dataset.upside);
-  const currency  = opt.dataset.currency || '$';
+  const stock = stockMap[ticker];
+  if (!stock) return;
+
+  const { upside_12m_pct: upside12m, currency } = stock;
   calcCurrency.textContent = currency;
 
   if (upside12m === null) {
@@ -238,34 +230,31 @@ function runCalc() {
     return;
   }
 
-  // Prorate: compound monthly growth rate from 12-month upside
   const monthlyRate   = Math.pow(1 + upside12m / 100, 1 / 12) - 1;
   const projectedGain = amount * Math.pow(1 + monthlyRate, months) - amount;
   const finalValue    = amount + projectedGain;
   const totalPct      = (projectedGain / amount) * 100;
   const isGain        = projectedGain >= 0;
 
-  document.getElementById('calc-label').textContent =
-    `If you invest ${currency}${amount.toLocaleString()} in ${opt.value} over ${months} month${months !== 1 ? 's' : ''}:`;
+  const fmt = n => n.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
-  document.getElementById('calc-final').textContent =
-    `${currency}${finalValue.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+  document.getElementById('calc-label').textContent =
+    `If you invest ${currency}${fmt(amount)} in ${ticker} over ${months} month${months !== 1 ? 's' : ''}:`;
+  document.getElementById('calc-final').textContent = `${currency}${fmt(finalValue)}`;
 
   const profitEl = document.getElementById('calc-profit');
-  profitEl.textContent = `${isGain ? '+' : ''}${currency}${projectedGain.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+  profitEl.textContent = `${isGain ? '+' : ''}${currency}${fmt(projectedGain)}`;
   profitEl.className   = `calc-chip ${isGain ? 'gain' : 'loss'}`;
 
-  document.getElementById('calc-pct').textContent =
-    `${isGain ? '+' : ''}${totalPct.toFixed(2)}%`;
-
+  document.getElementById('calc-pct').textContent  = `${isGain ? '+' : ''}${totalPct.toFixed(2)}%`;
   document.getElementById('calc-note').textContent =
-    `Based on ${upside12m > 0 ? '+' : ''}${upside12m}% analyst 12-month consensus, prorated over ${months} month${months !== 1 ? 's' : ''}.`;
+    `Based on ${upside12m >= 0 ? '+' : ''}${upside12m}% analyst 12-month consensus, prorated over ${months} month${months !== 1 ? 's' : ''}.`;
 
   calcResult.style.display = 'flex';
 }
 
 calcStock.addEventListener('change', runCalc);
-calcAmount.addEventListener('input', runCalc);
+calcAmount.addEventListener('input',  runCalc);
 
 /* ── Init ── */
 syncMonthsInit();
