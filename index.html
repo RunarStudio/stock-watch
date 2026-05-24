@@ -12,73 +12,25 @@
 
   <header>
     <div class="logo">Stock<span>Watch</span></div>
-    <div class="header-right">
-      <label class="horizon-label">Horizon
-        <input id="global-months" type="number" min="1" max="36" value="3" />
-        <span>months</span>
-      </label>
-      <span id="updated-at"></span>
-    </div>
+    <span id="updated-at"></span>
   </header>
 
-  <!-- Investment calculator -->
-  <div class="calc-card">
-    <div class="calc-top">
-      <span class="calc-title">Investment Calculator</span>
-      <span class="calc-sub">Prorated from 12-month analyst consensus targets</span>
-    </div>
-    <div class="calc-row">
-      <div class="calc-field">
-        <label>Stock</label>
-        <select id="calc-stock"><option value="">Select…</option></select>
-      </div>
-      <div class="calc-field">
-        <label>Amount</label>
-        <div class="calc-amount-wrap">
-          <span class="calc-currency" id="calc-currency">$</span>
-          <input id="calc-amount" type="number" min="1" placeholder="500" />
-        </div>
-      </div>
-      <div class="calc-field">
-        <label>Months</label>
-        <input id="calc-months-local" type="number" min="1" max="36" />
-      </div>
-    </div>
-    <div id="calc-result" class="calc-result" style="display:none">
-      <div class="calc-result-main">
-        <span id="calc-label"></span>
-        <span id="calc-final" class="calc-final"></span>
-      </div>
-      <div class="calc-result-row">
-        <span class="calc-chip gain" id="calc-profit"></span>
-        <span class="calc-chip neutral" id="calc-pct"></span>
-        <span class="calc-note" id="calc-note"></span>
-      </div>
-    </div>
-    <div id="calc-no-target" class="calc-no-target" style="display:none">
-      No analyst target available for this stock — too speculative to project.
-    </div>
-  </div>
-
-  <!-- Add-stock bar -->
   <div class="add-bar">
     <input id="ticker-input" type="text" maxlength="10" placeholder="Ticker (e.g. AAPL)" />
     <button id="add-btn">Add stock</button>
-    <span class="add-hint">Saved in your browser — persists across visits.</span>
+    <span class="add-hint">Saved in your browser.</span>
   </div>
 
   <div id="error">
-    Could not load agent data. Run the scheduled agent at least once to generate
-    <code>data/stocks.json</code>, then commit &amp; push.
+    Could not load agent data. Make sure the scheduled agent has run and pushed
+    <code>data/stocks.json</code>.
   </div>
 
-  <!-- User-tracked (live) -->
   <section id="tracked-section" style="display:none">
     <h2>Tracked <span class="count" id="tracked-count">0</span></h2>
     <div class="grid" id="tracked-grid"></div>
   </section>
 
-  <!-- Agent sections -->
   <section>
     <h2>Claude's Picks</h2>
     <div class="grid picks-grid" id="picks-grid"></div>
