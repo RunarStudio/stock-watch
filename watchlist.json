@@ -1,10 +1,4 @@
 {
-  "tickers": [
-    "AAPL",
-    "MSFT",
-    "NVDA",
-    "TSLA",
-    "AMZN"
-  ],
-  "note": "Edit this file to match your Revolut watchlist. Use uppercase ticker symbols."
+  "tickers": ["ORGN", "AARD", "RDDT", "NFLX", "CRM", "AMD"],
+  "note": "Edit this file to match your Revolut watchlist. AOF omitted — multiple companies share that ticker on different exchanges (DE/AU/UK/NZ). Clarify which and re-add."
 }
