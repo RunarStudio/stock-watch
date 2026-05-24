@@ -152,6 +152,14 @@ async function loadAgentData() {
     render('watchlist-grid', data.watchlist || [], {});
     render('sector-grid',   data.sector_picks || [], { showSector: true });
     render('picks-grid',    data.claude_picks  || [], { showReasoning: true });
+
+    // Populate calculator dropdown: picks first, then watchlist, then sector
+    const combined = [
+      ...(data.claude_picks  || []),
+      ...(data.watchlist     || []),
+      ...(data.sector_picks  || []),
+    ];
+    populateCalcDropdown(combined);
   } catch {
     document.getElementById('error').style.display = 'block';
     ['watchlist-grid', 'sector-grid', 'picks-grid'].forEach(id => {
@@ -169,6 +177,97 @@ function render(id, items, opts) {
   el.innerHTML = items.map(s => agentCard(s, opts)).join('');
 }
 
+/* ── Calculator ── */
+let allStocks = []; // populated after agent data loads
+
+const globalMonths  = document.getElementById('global-months');
+const calcMonths    = document.getElementById('calc-months-local');
+const calcStock     = document.getElementById('calc-stock');
+const calcAmount    = document.getElementById('calc-amount');
+const calcResult    = document.getElementById('calc-result');
+const calcNoTarget  = document.getElementById('calc-no-target');
+const calcCurrency  = document.getElementById('calc-currency');
+
+// Keep local months input in sync with global header setting
+globalMonths.addEventListener('input', () => {
+  calcMonths.value = globalMonths.value;
+  runCalc();
+});
+
+calcMonths.addEventListener('input', () => {
+  globalMonths.value = calcMonths.value;
+  runCalc();
+});
+
+function syncMonthsInit() {
+  calcMonths.value = globalMonths.value;
+}
+
+function populateCalcDropdown(stocks) {
+  // Deduplicate by ticker (picks may repeat sector stocks)
+  const seen = new Set();
+  stocks.forEach(s => {
+    if (seen.has(s.ticker)) return;
+    seen.add(s.ticker);
+    const opt = document.createElement('option');
+    opt.value = s.ticker;
+    opt.textContent = `${s.ticker} — ${s.name}`;
+    opt.dataset.price      = s.price;
+    opt.dataset.upside     = s.upside_12m_pct ?? '';
+    opt.dataset.currency   = s.ticker.includes('.') ? '€' : '$';
+    calcStock.appendChild(opt);
+  });
+}
+
+function runCalc() {
+  const opt    = calcStock.options[calcStock.selectedIndex];
+  const amount = parseFloat(calcAmount.value);
+  const months = parseFloat(calcMonths.value);
+
+  calcResult.style.display   = 'none';
+  calcNoTarget.style.display = 'none';
+
+  if (!opt || !opt.value || !amount || amount <= 0 || !months || months <= 0) return;
+
+  const upside12m = opt.dataset.upside === '' ? null : parseFloat(opt.dataset.upside);
+  const currency  = opt.dataset.currency || '$';
+  calcCurrency.textContent = currency;
+
+  if (upside12m === null) {
+    calcNoTarget.style.display = 'block';
+    return;
+  }
+
+  // Prorate: compound monthly growth rate from 12-month upside
+  const monthlyRate   = Math.pow(1 + upside12m / 100, 1 / 12) - 1;
+  const projectedGain = amount * Math.pow(1 + monthlyRate, months) - amount;
+  const finalValue    = amount + projectedGain;
+  const totalPct      = (projectedGain / amount) * 100;
+  const isGain        = projectedGain >= 0;
+
+  document.getElementById('calc-label').textContent =
+    `If you invest ${currency}${amount.toLocaleString()} in ${opt.value} over ${months} month${months !== 1 ? 's' : ''}:`;
+
+  document.getElementById('calc-final').textContent =
+    `${currency}${finalValue.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+
+  const profitEl = document.getElementById('calc-profit');
+  profitEl.textContent = `${isGain ? '+' : ''}${currency}${projectedGain.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+  profitEl.className   = `calc-chip ${isGain ? 'gain' : 'loss'}`;
+
+  document.getElementById('calc-pct').textContent =
+    `${isGain ? '+' : ''}${totalPct.toFixed(2)}%`;
+
+  document.getElementById('calc-note').textContent =
+    `Based on ${upside12m > 0 ? '+' : ''}${upside12m}% analyst 12-month consensus, prorated over ${months} month${months !== 1 ? 's' : ''}.`;
+
+  calcResult.style.display = 'flex';
+}
+
+calcStock.addEventListener('change', runCalc);
+calcAmount.addEventListener('input', runCalc);
+
 /* ── Init ── */
+syncMonthsInit();
 refreshTracked();
 loadAgentData();
