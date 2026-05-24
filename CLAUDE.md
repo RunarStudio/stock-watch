@@ -54,6 +54,18 @@ fetch over `file://`). Easiest options:
 
 Edit `watchlist.json` to keep your Revolut tickers up to date. Use uppercase symbols (e.g. `"TSLA"`, `"NVDA"`).
 
+## Publishing
+
+After writing `data/stocks.json`, always commit and push so GitHub Pages updates automatically:
+
+```
+git add data/stocks.json
+git commit -m "chore: daily stock update YYYY-MM-DD"
+git push
+```
+
+Live URL: https://ryuustark.github.io/stock-watch/
+
 ## Schedule
 
 Runs daily at market close (~17:00 US Eastern). Configured via Claude Code `/schedule`.
