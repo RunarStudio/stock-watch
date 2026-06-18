@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-24T20:00:00Z",
+  "updated_at": "2026-06-18T21:00:00Z",
   "ultra_short": [
     {
       "ticker": "AAPL", "name": "Apple Inc.",         "price": 211.00, "change_pct":  1.20,
@@ -33,38 +33,34 @@
     }
   ],
   "watchlist": [
-    { "ticker": "AMD",    "name": "Advanced Micro Devices", "price": 467.51, "change_pct":  3.22, "upside_12m_pct":  1.0,  "target_low_pct": -52,  "target_high_pct":  34,  "consensus": "Strong Buy" },
-    { "ticker": "CRM",    "name": "Salesforce Inc.",        "price": 180.07, "change_pct": -0.80, "upside_12m_pct": 30.0,  "target_low_pct": -15,  "target_high_pct":  55,  "consensus": "Buy" },
-    { "ticker": "RDDT",   "name": "Reddit Inc.",            "price": 141.10, "change_pct": -6.50, "upside_12m_pct": 20.0,  "target_low_pct": -20,  "target_high_pct":  60,  "consensus": "Buy" },
-    { "ticker": "NFLX",   "name": "Netflix Inc.",           "price": 88.39,  "change_pct": -1.80, "upside_12m_pct": 15.0,  "target_low_pct":  -8,  "target_high_pct":  35,  "consensus": "Buy" },
-    { "ticker": "AOF.DE", "name": "ATOSS Software SE (€)",  "price": 97.50,  "change_pct": -0.51, "upside_12m_pct": 40.0,  "target_low_pct":  -7,  "target_high_pct":  61,  "consensus": "Buy" },
-    { "ticker": "ORGN",   "name": "Origin Materials",       "price": 1.24,   "change_pct": -2.40, "upside_12m_pct": null,  "target_low_pct": null, "target_high_pct": null, "consensus": null },
-    { "ticker": "AARD",   "name": "Aardvark Therapeutics",  "price": 4.50,   "change_pct": -5.10, "upside_12m_pct": null,  "target_low_pct": null, "target_high_pct": null, "consensus": null }
+    { "ticker": "AMD",    "name": "Advanced Micro Devices", "price": 512.48, "change_pct":  0.00, "upside_12m_pct":  1.0,  "target_low_pct": -52,  "target_high_pct":  34,  "consensus": "Strong Buy" },
+    { "ticker": "CRM",    "name": "Salesforce Inc.",        "price": 155.80, "change_pct": -3.66, "upside_12m_pct": 30.0,  "target_low_pct": -15,  "target_high_pct":  55,  "consensus": "Buy" },
+    { "ticker": "RDDT",   "name": "Reddit Inc.",            "price": 165.95, "change_pct": -5.38, "upside_12m_pct": 20.0,  "target_low_pct": -20,  "target_high_pct":  60,  "consensus": "Buy" },
+    { "ticker": "NFLX",   "name": "Netflix Inc.",           "price":  77.20, "change_pct":  0.31, "upside_12m_pct": 15.0,  "target_low_pct":  -8,  "target_high_pct":  35,  "consensus": "Buy" },
+    { "ticker": "AOF.DE", "name": "ATOSS Software SE (€)",  "price":  71.60, "change_pct": -1.65, "upside_12m_pct": 40.0,  "target_low_pct":  -7,  "target_high_pct":  61,  "consensus": "Buy" },
+    { "ticker": "ORGN",   "name": "Origin Materials",       "price":   1.12, "change_pct":  2.75, "upside_12m_pct": null,  "target_low_pct": null, "target_high_pct": null, "consensus": null },
+    { "ticker": "AARD",   "name": "Aardvark Therapeutics",  "price":   3.90, "change_pct":  0.00, "upside_12m_pct": null,  "target_low_pct": null, "target_high_pct": null, "consensus": null }
   ],
   "sector_picks": [
-    { "ticker": "NVDA",  "name": "NVIDIA Corp.",        "price": 215.33, "change_pct":  1.80, "sector": "AI/Chips",    "upside_12m_pct":  37.0, "target_low_pct": -16, "target_high_pct":  63, "consensus": "Strong Buy" },
-    { "ticker": "MU",    "name": "Micron Technology",   "price": 751.00, "change_pct":  2.90, "sector": "AI/Memory",   "upside_12m_pct": -18.0, "target_low_pct": -67, "target_high_pct":  46, "consensus": "Strong Buy" },
-    { "ticker": "CRWV",  "name": "CoreWeave Inc.",      "price": 104.30, "change_pct": -1.20, "sector": "AI Infra",    "upside_12m_pct":  33.0, "target_low_pct": -14, "target_high_pct":  52, "consensus": "Buy" },
-    { "ticker": "NEE",   "name": "NextEra Energy",      "price": 88.55,  "change_pct": -1.27, "sector": "Green Energy","upside_12m_pct":  10.0, "target_low_pct":  -5, "target_high_pct":  20, "consensus": "Buy" },
-    { "ticker": "BE",    "name": "Bloom Energy",        "price": 28.70,  "change_pct":  1.40, "sector": "Green Energy","upside_12m_pct":  25.0, "target_low_pct": -20, "target_high_pct":  60, "consensus": "Buy" },
-    { "ticker": "CSIQ",  "name": "Canadian Solar Inc.", "price": 14.20,  "change_pct":  0.90, "sector": "Solar",       "upside_12m_pct":  20.0, "target_low_pct": -25, "target_high_pct":  55, "consensus": "Buy" }
+    { "ticker": "MRVL", "name": "Marvell Technology Inc.",        "price": 311.51, "change_pct": 12.51, "sector": "Tech", "upside_12m_pct": null, "target_low_pct": null, "target_high_pct": null, "consensus": "Buy" },
+    { "ticker": "SNDK", "name": "Sandisk Corporation",            "price": 2100.00,"change_pct":  8.60, "sector": "Tech", "upside_12m_pct": null, "target_low_pct": null, "target_high_pct": null, "consensus": null },
+    { "ticker": "MAGS", "name": "Roundhill Magnificent Seven ETF","price":   64.86,"change_pct":  0.43, "sector": "ETF",  "upside_12m_pct": null, "target_low_pct": null, "target_high_pct": null, "consensus": null }
   ],
   "claude_picks": [
     {
-      "ticker": "NVDA",   "name": "NVIDIA Corp.",       "price": 215.33, "change_pct": 1.80,  "upside_12m_pct": 37.0, "target_low_pct": -16, "target_high_pct":  63, "consensus": "Strong Buy",
-      "reasoning": "37% analyst upside to $294. At 80% of 52-week range — not overbought. Record earnings May 21. Safest AI anchor for short-term entry."
+      "ticker": "NVDA", "name": "NVIDIA Corp.", "price": 208.82, "change_pct": 0.40,
+      "upside_12m_pct": 37.0, "target_low_pct": -16, "target_high_pct": 63, "consensus": "Strong Buy",
+      "reasoning": "MRVL's 12% surge on Nvidia collaboration endorsement reinforces AI chip demand; NVDA holds steady near highs."
     },
     {
-      "ticker": "CRWV",   "name": "CoreWeave Inc.",     "price": 104.30, "change_pct": -1.20, "upside_12m_pct": 33.0, "target_low_pct": -14, "target_high_pct":  52, "consensus": "Buy",
-      "reasoning": "Down from highs on guidance fears, 33% upside to analyst target $139. Meta deal is a hard catalyst. Best risk/reward in AI infra right now."
+      "ticker": "CRWV", "name": "CoreWeave Inc.", "price": 115.21, "change_pct": -1.56,
+      "upside_12m_pct": 33.0, "target_low_pct": -14, "target_high_pct": 52, "consensus": "Buy",
+      "reasoning": "AI cloud infrastructure leader dips slightly; long-term GPU cluster demand intact amid sector-wide rally."
     },
     {
-      "ticker": "NEE",    "name": "NextEra Energy",     "price": 88.55,  "change_pct": -1.27, "upside_12m_pct": 10.0, "target_low_pct":  -5, "target_high_pct":  20, "consensus": "Buy",
-      "reasoning": "Pulled back 10% from its May high of $97.88. $67B Dominion deal + 33GW backlog = dip worth buying. Best defensive ecological entry point."
-    },
-    {
-      "ticker": "AOF.DE", "name": "ATOSS Software SE (€)", "price": 97.50, "change_pct": -0.51, "upside_12m_pct": 40.0, "target_low_pct": -7, "target_high_pct": 61, "consensus": "Buy",
-      "reasoning": "Down 34% from €147 peak, analyst consensus target €137 (+40% upside). Revenue +10% YoY, cloud +30%. Your most undervalued current holding."
+      "ticker": "NEE", "name": "NextEra Energy Inc.", "price": 84.97, "change_pct": -1.01,
+      "upside_12m_pct": 10.0, "target_low_pct": -5, "target_high_pct": 20, "consensus": "Buy",
+      "reasoning": "Power utility poised for AI data center electricity boom; pullback offers entry as energy demand outlook brightens."
     }
   ]
 }
