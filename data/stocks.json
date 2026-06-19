@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-18T21:00:00Z",
+  "updated_at": "2026-06-19T21:00:00Z",
   "ultra_short": [
     {
       "ticker": "AAPL", "name": "Apple Inc.",         "price": 211.00, "change_pct":  1.20,
@@ -33,34 +33,34 @@
     }
   ],
   "watchlist": [
-    { "ticker": "AMD",    "name": "Advanced Micro Devices", "price": 512.48, "change_pct":  0.00, "upside_12m_pct":  1.0,  "target_low_pct": -52,  "target_high_pct":  34,  "consensus": "Strong Buy" },
-    { "ticker": "CRM",    "name": "Salesforce Inc.",        "price": 155.80, "change_pct": -3.66, "upside_12m_pct": 30.0,  "target_low_pct": -15,  "target_high_pct":  55,  "consensus": "Buy" },
-    { "ticker": "RDDT",   "name": "Reddit Inc.",            "price": 165.95, "change_pct": -5.38, "upside_12m_pct": 20.0,  "target_low_pct": -20,  "target_high_pct":  60,  "consensus": "Buy" },
-    { "ticker": "NFLX",   "name": "Netflix Inc.",           "price":  77.20, "change_pct":  0.31, "upside_12m_pct": 15.0,  "target_low_pct":  -8,  "target_high_pct":  35,  "consensus": "Buy" },
+    { "ticker": "AMD",    "name": "Advanced Micro Devices", "price": 530.87, "change_pct":  3.59, "upside_12m_pct":  1.0,  "target_low_pct": -52,  "target_high_pct":  34,  "consensus": "Strong Buy" },
+    { "ticker": "CRM",    "name": "Salesforce Inc.",        "price": 151.78, "change_pct": -2.09, "upside_12m_pct": 30.0,  "target_low_pct": -15,  "target_high_pct":  55,  "consensus": "Buy" },
+    { "ticker": "RDDT",   "name": "Reddit Inc.",            "price": 174.96, "change_pct": -1.50, "upside_12m_pct": 20.0,  "target_low_pct": -20,  "target_high_pct":  60,  "consensus": "Buy" },
+    { "ticker": "NFLX",   "name": "Netflix Inc.",           "price":  77.38, "change_pct":  0.26, "upside_12m_pct": 15.0,  "target_low_pct":  -8,  "target_high_pct":  35,  "consensus": "Buy" },
     { "ticker": "AOF.DE", "name": "ATOSS Software SE (€)",  "price":  71.60, "change_pct": -1.65, "upside_12m_pct": 40.0,  "target_low_pct":  -7,  "target_high_pct":  61,  "consensus": "Buy" },
-    { "ticker": "ORGN",   "name": "Origin Materials",       "price":   1.12, "change_pct":  2.75, "upside_12m_pct": null,  "target_low_pct": null, "target_high_pct": null, "consensus": null },
-    { "ticker": "AARD",   "name": "Aardvark Therapeutics",  "price":   3.90, "change_pct":  0.00, "upside_12m_pct": null,  "target_low_pct": null, "target_high_pct": null, "consensus": null }
+    { "ticker": "ORGN",   "name": "Origin Materials",       "price":   1.08, "change_pct": -0.92, "upside_12m_pct": null,  "target_low_pct": null, "target_high_pct": null, "consensus": null },
+    { "ticker": "AARD",   "name": "Aardvark Therapeutics",  "price":   3.97, "change_pct":  1.79, "upside_12m_pct": null,  "target_low_pct": null, "target_high_pct": null, "consensus": null }
   ],
   "sector_picks": [
-    { "ticker": "MRVL", "name": "Marvell Technology Inc.",        "price": 311.51, "change_pct": 12.51, "sector": "Tech", "upside_12m_pct": null, "target_low_pct": null, "target_high_pct": null, "consensus": "Buy" },
-    { "ticker": "SNDK", "name": "Sandisk Corporation",            "price": 2100.00,"change_pct":  8.60, "sector": "Tech", "upside_12m_pct": null, "target_low_pct": null, "target_high_pct": null, "consensus": null },
-    { "ticker": "MAGS", "name": "Roundhill Magnificent Seven ETF","price":   64.86,"change_pct":  0.43, "sector": "ETF",  "upside_12m_pct": null, "target_low_pct": null, "target_high_pct": null, "consensus": null }
+    { "ticker": "MRVL", "name": "Marvell Technology Inc.", "price": 311.51, "change_pct": 12.51, "sector": "Tech", "upside_12m_pct": 10.8, "target_low_pct": -15, "target_high_pct": 35, "consensus": "Buy" },
+    { "ticker": "CRWV", "name": "CoreWeave Inc.",          "price": 119.06, "change_pct": 11.91, "sector": "Tech", "upside_12m_pct": 33.0, "target_low_pct": -14, "target_high_pct": 52, "consensus": "Buy" },
+    { "ticker": "QQQ",  "name": "Invesco QQQ Trust",      "price": 740.62, "change_pct":  2.51, "sector": "ETF",  "upside_12m_pct": 12.0, "target_low_pct": -10, "target_high_pct": 22, "consensus": "Buy" }
   ],
   "claude_picks": [
     {
-      "ticker": "NVDA", "name": "NVIDIA Corp.", "price": 208.82, "change_pct": 0.40,
-      "upside_12m_pct": 37.0, "target_low_pct": -16, "target_high_pct": 63, "consensus": "Strong Buy",
-      "reasoning": "MRVL's 12% surge on Nvidia collaboration endorsement reinforces AI chip demand; NVDA holds steady near highs."
-    },
-    {
-      "ticker": "CRWV", "name": "CoreWeave Inc.", "price": 115.21, "change_pct": -1.56,
+      "ticker": "CRWV", "name": "CoreWeave Inc.", "price": 119.06, "change_pct": 11.91,
       "upside_12m_pct": 33.0, "target_low_pct": -14, "target_high_pct": 52, "consensus": "Buy",
-      "reasoning": "AI cloud infrastructure leader dips slightly; long-term GPU cluster demand intact amid sector-wide rally."
+      "reasoning": "Added to Nasdaq 100 index; mandatory index-fund buying drove an 11.9% surge on strong volume."
     },
     {
-      "ticker": "NEE", "name": "NextEra Energy Inc.", "price": 84.97, "change_pct": -1.01,
+      "ticker": "NVDA", "name": "NVIDIA Corp.", "price": 210.69, "change_pct": 2.95,
+      "upside_12m_pct": 37.0, "target_low_pct": -16, "target_high_pct": 63, "consensus": "Strong Buy",
+      "reasoning": "AI chip demand accelerating; MRVL S&P 500 entry and analyst upgrades reinforce GPU infrastructure thesis."
+    },
+    {
+      "ticker": "NEE", "name": "NextEra Energy Inc.", "price": 86.64, "change_pct": 1.19,
       "upside_12m_pct": 10.0, "target_low_pct": -5, "target_high_pct": 20, "consensus": "Buy",
-      "reasoning": "Power utility poised for AI data center electricity boom; pullback offers entry as energy demand outlook brightens."
+      "reasoning": "Fed rate hold lifts dividend stocks; AI data center power demand brightens clean energy outlook."
     }
   ]
 }
