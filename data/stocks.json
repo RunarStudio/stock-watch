@@ -1,60 +1,40 @@
 {
-  "updated_at": "2026-06-22T21:00:00Z",
-  "ultra_short": [
-    {
-      "ticker": "AAPL", "name": "Apple Inc.",         "price": 214.63, "change_pct":  0.86,
-      "beta": 1.2,  "weekly_swing_pct": 4,  "risk": "low",
-      "upside_12m_pct": 15, "target_low_pct": -8,  "target_high_pct": 30, "consensus": "Buy",
-      "swing_note": "Highest daily volume on earth. Post-earnings volatility window. Clean weekly structure with clear support/resistance."
-    },
-    {
-      "ticker": "META", "name": "Meta Platforms",     "price": 612.00, "change_pct": -0.80,
-      "beta": 1.5,  "weekly_swing_pct": 6,  "risk": "medium",
-      "upside_12m_pct": 25, "target_low_pct": -12, "target_high_pct": 45, "consensus": "Buy",
-      "swing_note": "Down 8% YTD despite record Q1 earnings (+33% revenue). Oversold bounce pattern forming. Snaps back hard on good news."
-    },
-    {
-      "ticker": "QQQ",  "name": "Invesco QQQ ETF",   "price": 739.83, "change_pct": -0.25,
-      "beta": 1.05, "weekly_swing_pct": 4,  "risk": "low",
-      "upside_12m_pct": 12, "target_low_pct": -10, "target_high_pct": 22, "consensus": "Buy",
-      "swing_note": "Nasdaq-100 quarterly rebalance day: CRWV and Astera added, big-tech drag pulls QQQ -0.25% despite small-cap rally."
-    },
-    {
-      "ticker": "TSLA", "name": "Tesla Inc.",         "price": 412.00, "change_pct":  0.73,
-      "beta": 2.07, "weekly_swing_pct": 10, "risk": "medium",
-      "upside_12m_pct": 15, "target_low_pct": -20, "target_high_pct": 40, "consensus": "Hold",
-      "swing_note": "52-week range $273–$499. Currently mid-range. Classic oscillator: 10%+ weekly swings common. Buy near $380 support, target $450."
-    },
-    {
-      "ticker": "ARM",  "name": "Arm Holdings",      "price": 149.00, "change_pct":  2.76,
-      "beta": 4.18, "weekly_swing_pct": 13, "risk": "high",
-      "upside_12m_pct": 35, "target_low_pct": -25, "target_high_pct": 60, "consensus": "Buy",
-      "swing_note": "Beta 4.18 — moves 4× the market. Extreme weekly swings. High risk, high reward. Only enter with strict stop-loss, small position."
-    }
-  ],
+  "updated_at": "2026-06-23T21:00:00Z",
   "watchlist": [
-    { "ticker": "AMD",    "name": "Advanced Micro Devices", "price": 548.22, "change_pct":  4.35, "upside_12m_pct":  1.0,  "target_low_pct": -52,  "target_high_pct":  34,  "consensus": "Strong Buy" },
-    { "ticker": "CRM",    "name": "Salesforce Inc.",        "price": 147.99, "change_pct": -2.25, "upside_12m_pct": 30.0,  "target_low_pct": -15,  "target_high_pct":  55,  "consensus": "Buy" },
-    { "ticker": "RDDT",   "name": "Reddit Inc.",            "price": 178.18, "change_pct":  1.83, "upside_12m_pct": 20.0,  "target_low_pct": -20,  "target_high_pct":  60,  "consensus": "Buy" },
-    { "ticker": "NFLX",   "name": "Netflix Inc.",           "price":  77.38, "change_pct": -4.08, "upside_12m_pct": 15.0,  "target_low_pct":  -8,  "target_high_pct":  35,  "consensus": "Buy" },
-    { "ticker": "AOF.DE", "name": "ATOSS Software SE (€)",  "price":  73.70, "change_pct":  4.54, "upside_12m_pct": 40.0,  "target_low_pct":  -7,  "target_high_pct":  61,  "consensus": "Buy" },
-    { "ticker": "ORGN",   "name": "Origin Materials",       "price":   1.43, "change_pct": -4.67, "upside_12m_pct": null,  "target_low_pct": null, "target_high_pct": null, "consensus": null },
-    { "ticker": "AARD",   "name": "Aardvark Therapeutics",  "price":   6.73, "change_pct":  7.86, "upside_12m_pct": null,  "target_low_pct": null, "target_high_pct": null, "consensus": null }
+    { "ticker": "AMD",    "name": "Advanced Micro Devices",    "price": 523.00, "change_pct": -5.00 },
+    { "ticker": "CRM",    "name": "Salesforce Inc.",           "price": 153.19, "change_pct": -1.50 },
+    { "ticker": "RDDT",   "name": "Reddit Inc.",               "price": 178.18, "change_pct":  1.83 },
+    { "ticker": "NFLX",   "name": "Netflix Inc.",              "price":  73.95, "change_pct":  1.47 },
+    { "ticker": "AOF.DE", "name": "ATOSS Software SE (EUR)",   "price":  73.70, "change_pct": -5.75 },
+    { "ticker": "ORGN",   "name": "Origin Materials Inc.",     "price":   1.43, "change_pct": -4.67 },
+    { "ticker": "AARD",   "name": "Aardvark Therapeutics Inc.","price":   3.97, "change_pct":  0.00 }
   ],
   "sector_picks": [
-    { "ticker": "SMCI", "name": "Super Micro Computer Inc.", "price":  35.69, "change_pct": 15.50, "sector": "Tech", "upside_12m_pct": null, "target_low_pct": null, "target_high_pct": null, "consensus": null },
-    { "ticker": "QQQ",  "name": "Invesco QQQ Trust",         "price": 739.83, "change_pct": -0.25, "sector": "ETF",  "upside_12m_pct": 12.0, "target_low_pct": -10, "target_high_pct": 22, "consensus": "Buy" }
+    { "ticker": "MU",  "name": "Micron Technology",        "price": 1074.60, "change_pct": -11.40, "sector": "Tech" },
+    { "ticker": "TSM", "name": "Taiwan Semiconductor Mfg.", "price":  443.35, "change_pct":  -5.20, "sector": "Tech" },
+    { "ticker": "VOO", "name": "Vanguard S&P 500 ETF",     "price":  677.57, "change_pct":  -1.24, "sector": "ETF"  }
   ],
   "claude_picks": [
     {
-      "ticker": "CRWV", "name": "CoreWeave Inc.", "price": 110.27, "change_pct": -6.70,
-      "upside_12m_pct": 33.0, "target_low_pct": -14, "target_high_pct": 52, "consensus": "Buy",
-      "reasoning": "Added to Nasdaq-100 today but down 6.7% on insider selling and new debt; textbook sell-the-news."
+      "ticker": "NVDA",
+      "name": "NVIDIA Corp.",
+      "price": 201.97,
+      "change_pct": -3.20,
+      "reasoning": "AI chip giant down 3.2% as global semiconductor rout on AI valuation concerns drags all semis."
     },
     {
-      "ticker": "NVDA", "name": "NVIDIA Corp.", "price": 209.25, "change_pct": -1.01,
-      "upside_12m_pct": 37.0, "target_low_pct": -16, "target_high_pct": 63, "consensus": "Strong Buy",
-      "reasoning": "SMCI's +15% ISC rally on NVDA's Vera Rubin NVL4 chips confirms sustained AI server demand."
+      "ticker": "CRWV",
+      "name": "CoreWeave Inc.",
+      "price": 105.18,
+      "change_pct": -7.50,
+      "reasoning": "AI cloud infra hit hard in chip selloff; off from $112 daily high as AI sentiment sharply sours."
+    },
+    {
+      "ticker": "NEE",
+      "name": "NextEra Energy Inc.",
+      "price": 86.63,
+      "change_pct": -0.30,
+      "reasoning": "Defensive utility near flat while AI tech craters; clean energy grid demand from data centers intact."
     }
   ]
 }
