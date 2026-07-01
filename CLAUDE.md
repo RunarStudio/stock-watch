@@ -64,7 +64,7 @@ git commit -m "chore: daily stock update YYYY-MM-DD"
 git push
 ```
 
-Live URL: https://ryuustark.github.io/stock-watch/
+Live URL: https://runarstudio.github.io/stock-watch/
 
 ## Schedule
 
