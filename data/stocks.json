@@ -1,41 +1,40 @@
 {
-  "updated_at": "2026-07-07T21:00:00Z",
+  "updated_at": "2026-07-09T21:00:00Z",
   "watchlist": [
-    { "ticker": "AMD",    "name": "Advanced Micro Devices",       "price": 512.90, "change_pct": -7.09 },
-    { "ticker": "CRM",    "name": "Salesforce Inc.",              "price": 165.65, "change_pct": -0.28 },
-    { "ticker": "RDDT",   "name": "Reddit Inc.",                  "price": 202.29, "change_pct":  3.50 },
-    { "ticker": "NFLX",   "name": "Netflix Inc.",                 "price":  76.05, "change_pct": -2.06 },
-    { "ticker": "AOF.DE", "name": "ATOSS Software SE (EUR)",      "price":  73.70, "change_pct": -5.75 },
-    { "ticker": "ORGN",   "name": "Origin Materials Inc.",        "price":   0.94, "change_pct":  8.62 },
-    { "ticker": "AARD",   "name": "Aardvark Therapeutics Inc.",   "price":   5.18, "change_pct":  8.14 }
+    { "ticker": "AMD",    "name": "Advanced Micro Devices",       "price": 516.80, "change_pct": -0.14 },
+    { "ticker": "CRM",    "name": "Salesforce Inc.",              "price": 166.58, "change_pct":  0.00 },
+    { "ticker": "RDDT",   "name": "Reddit Inc.",                  "price": 198.60, "change_pct":  1.67 },
+    { "ticker": "NFLX",   "name": "Netflix Inc.",                 "price":  75.67, "change_pct":  0.12 },
+    { "ticker": "AOF.DE", "name": "ATOSS Software SE (EUR)",      "price":  75.00, "change_pct":  0.94 },
+    { "ticker": "ORGN",   "name": "Origin Materials Inc.",        "price":   1.43, "change_pct": -4.67 },
+    { "ticker": "AARD",   "name": "Aardvark Therapeutics Inc.",   "price":   5.70, "change_pct":  1.42 }
   ],
   "sector_picks": [
-    { "ticker": "AMD",  "name": "Advanced Micro Devices",        "price": 512.90, "change_pct": -7.09, "sector": "Tech" },
-    { "ticker": "NVDA", "name": "NVIDIA Corp.",                  "price": 197.29, "change_pct":  1.40, "sector": "Tech" },
-    { "ticker": "QQQ",  "name": "Invesco QQQ Trust",             "price": 455.50, "change_pct":  1.43, "sector": "ETF"  },
-    { "ticker": "MAGS", "name": "Roundhill Magnificent Seven ETF","price":  65.37, "change_pct":  0.54, "sector": "ETF"  }
+    { "ticker": "SOXX", "name": "iShares Semiconductor ETF",  "price": 581.70, "change_pct": 3.50, "sector": "ETF" },
+    { "ticker": "SMH",  "name": "VanEck Semiconductor ETF",   "price": 607.73, "change_pct": 2.48, "sector": "ETF" },
+    { "ticker": "QQQ",  "name": "Invesco QQQ Trust",          "price": 723.28, "change_pct": 1.66, "sector": "ETF" }
   ],
   "claude_picks": [
     {
       "ticker": "NVDA",
       "name": "NVIDIA Corp.",
-      "price": 197.29,
-      "change_pct": 1.40,
-      "reasoning": "Denied Kyber NVL144 delay rumors; Goldman says 21.7x valuation compelling as Blackwell demand holds strong."
+      "price": 202.02,
+      "change_pct": -1.03,
+      "reasoning": "AI chip sector rallies broadly today; NVDA slight dip is a potential entry amid sustained AI demand."
     },
     {
       "ticker": "CRWV",
       "name": "CoreWeave Inc.",
-      "price": 85.48,
-      "change_pct": 2.00,
-      "reasoning": "AI cloud infra leader recovering from July 1 dip; hyperscaler capex boom to $750B sustains demand outlook."
+      "price": 89.70,
+      "change_pct": -0.33,
+      "reasoning": "AI cloud GPU infrastructure leader; enterprise AI workload expansion underpins long-term demand."
     },
     {
       "ticker": "NEE",
       "name": "NextEra Energy Inc.",
       "price": 84.97,
       "change_pct": -1.01,
-      "reasoning": "Clean energy leader well-positioned for AI data center power surge; modest dip creates entry opportunity."
+      "reasoning": "Clean energy utility benefiting from surging AI data-center power demand; stable dividend appeal."
     }
   ]
 }
