@@ -1,40 +1,39 @@
 {
-  "updated_at": "2026-07-21T21:00:00Z",
+  "updated_at": "2026-07-22T21:00:00Z",
   "watchlist": [
-    { "ticker": "AMD",    "name": "Advanced Micro Devices",     "price": 543.10, "change_pct":  7.90 },
-    { "ticker": "CRM",    "name": "Salesforce Inc.",            "price": 167.08, "change_pct": -3.40 },
-    { "ticker": "RDDT",   "name": "Reddit Inc.",                "price": 181.64, "change_pct":  0.00 },
-    { "ticker": "NFLX",   "name": "Netflix Inc.",               "price":  67.71, "change_pct":  0.16 },
-    { "ticker": "AOF.DE", "name": "ATOSS Software SE (EUR)",    "price":  71.50, "change_pct": -1.65 },
-    { "ticker": "ORGN",   "name": "Origin Materials Inc.",      "price":   2.16, "change_pct":  0.00 },
-    { "ticker": "AARD",   "name": "Aardvark Therapeutics Inc.", "price":   4.36, "change_pct":  0.00 }
+    { "ticker": "AMD",    "name": "Advanced Micro Devices",     "price": 544.43, "change_pct":  8.10 },
+    { "ticker": "CRM",    "name": "Salesforce Inc.",            "price": 170.06, "change_pct": -2.20 },
+    { "ticker": "RDDT",   "name": "Reddit Inc.",                "price": 170.10, "change_pct": -9.18 },
+    { "ticker": "NFLX",   "name": "Netflix Inc.",               "price":  70.15, "change_pct":  2.06 },
+    { "ticker": "AOF.DE", "name": "ATOSS Software SE (EUR)",    "price":  73.70, "change_pct":  0.00 },
+    { "ticker": "ORGN",   "name": "Origin Materials Inc.",      "price":   1.43, "change_pct": -4.70 },
+    { "ticker": "AARD",   "name": "Aardvark Therapeutics Inc.", "price":   5.70, "change_pct":  1.42 }
   ],
   "sector_picks": [
-    { "ticker": "MU",   "name": "Micron Technology Inc.",                   "price": 969.89, "change_pct": 7.33, "sector": "Tech" },
-    { "ticker": "DWMF", "name": "WisdomTree International Multifactor ETF", "price":  33.74, "change_pct": 2.00, "sector": "ETF"  },
-    { "ticker": "EJUL", "name": "Innovator EM Power Buffer – July ETF",     "price":  30.49, "change_pct": 1.70, "sector": "ETF"  }
+    { "ticker": "SNDK", "name": "SanDisk Corp.",                 "price": 1588.96, "change_pct": 14.20, "sector": "Tech" },
+    { "ticker": "XLE",  "name": "Energy Select Sector SPDR ETF", "price":   59.20, "change_pct":  1.19, "sector": "ETF"  }
   ],
   "claude_picks": [
     {
       "ticker": "NVDA",
       "name": "NVIDIA Corp.",
-      "price": 203.28,
-      "change_pct": 0.23,
-      "reasoning": "Q2 revenue targeting $91B; AI chip demand intact ahead of earnings next week."
+      "price": 205.39,
+      "change_pct": -0.9,
+      "reasoning": "NVDA disclosed 9.3% passive stake in Nebius, sending NBIS +15.2%; AI strategy in focus."
     },
     {
       "ticker": "CRWV",
       "name": "CoreWeave Inc.",
-      "price": 74.00,
-      "change_pct": 2.30,
-      "reasoning": "BofA Buy at $140; $99B backlog and 1GW active power confirm AI cloud bottleneck."
+      "price": 85.00,
+      "change_pct": 1.82,
+      "reasoning": "AI cloud rebound +1.82% after -12% prior week; data-center capacity demand narrative intact."
     },
     {
       "ticker": "NEE",
       "name": "NextEra Energy Inc.",
-      "price": 89.54,
-      "change_pct": 1.31,
-      "reasoning": "AI data center power deals bolster NEE's renewable pipeline; steady outperformer."
+      "price": 88.50,
+      "change_pct": 0.50,
+      "reasoning": "Q2 2026 earnings due July 24; 18.9% YoY revenue growth expected; clean-energy backlog grows."
     }
   ]
 }
