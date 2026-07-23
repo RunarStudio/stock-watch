@@ -1,40 +1,42 @@
 {
-  "updated_at": "2026-07-20T20:00:00Z",
+  "updated_at": "2026-07-23T21:00:00Z",
   "watchlist": [
-    { "ticker": "AMD",    "name": "Advanced Micro Devices",     "price": 513.21, "change_pct":  3.52 },
-    { "ticker": "CRM",    "name": "Salesforce Inc.",            "price": 173.02, "change_pct":  1.32 },
-    { "ticker": "RDDT",   "name": "Reddit Inc.",                "price": 184.58, "change_pct":  2.83 },
-    { "ticker": "NFLX",   "name": "Netflix Inc.",               "price":  68.95, "change_pct":  0.00 },
-    { "ticker": "AOF.DE", "name": "ATOSS Software SE (EUR)",    "price":  73.70, "change_pct": -1.73 },
-    { "ticker": "ORGN",   "name": "Origin Materials Inc.",      "price":   0.95, "change_pct":  0.00 },
-    { "ticker": "AARD",   "name": "Aardvark Therapeutics Inc.", "price":   5.70, "change_pct":  0.00 }
+    { "ticker": "AMD",    "name": "Advanced Micro Devices",     "price": 529.48, "change_pct": -4.00 },
+    { "ticker": "CRM",    "name": "Salesforce Inc.",            "price": 157.14, "change_pct": -3.59 },
+    { "ticker": "RDDT",   "name": "Reddit Inc.",                "price": 168.78, "change_pct": -0.94 },
+    { "ticker": "NFLX",   "name": "Netflix Inc.",               "price":  68.67, "change_pct": -0.20 },
+    { "ticker": "AOF.DE", "name": "ATOSS Software SE (EUR)",    "price":  71.50, "change_pct": -2.99 },
+    { "ticker": "ORGN",   "name": "Origin Materials Inc.",      "price":   1.40, "change_pct": -2.10 },
+    { "ticker": "AARD",   "name": "Aardvark Therapeutics Inc.", "price":   6.48, "change_pct":  0.00 }
   ],
   "sector_picks": [
-    { "ticker": "TER",  "name": "Teradyne Inc.",               "price": 198.00, "change_pct":  8.4, "sector": "Tech" },
-    { "ticker": "LITE", "name": "Lumentum Holdings Inc.",      "price":  84.50, "change_pct":  6.2, "sector": "Tech" },
-    { "ticker": "EFV",  "name": "iShares MSCI EAFE Value ETF", "price":  69.50, "change_pct":  5.3, "sector": "ETF"  }
+    { "ticker": "WDC",  "name": "Western Digital Corp.",          "price": 548.00, "change_pct": 12.50, "sector": "Tech" },
+    { "ticker": "MU",   "name": "Micron Technology Inc.",         "price": 130.00, "change_pct":  3.28, "sector": "Tech" },
+    { "ticker": "TSLA", "name": "Tesla Inc.",                     "price": 295.00, "change_pct":-14.00, "sector": "Tech" },
+    { "ticker": "GOOG", "name": "Alphabet Inc.",                  "price": 171.50, "change_pct": -7.00, "sector": "Tech" },
+    { "ticker": "XLE",  "name": "Energy Select Sector SPDR ETF", "price":  60.38, "change_pct":  2.00, "sector": "ETF"  }
   ],
   "claude_picks": [
     {
-      "ticker": "CRWV",
-      "name": "CoreWeave Inc.",
-      "price": 86.50,
-      "change_pct": 6.6,
-      "reasoning": "Up 6.6% today as AI cloud GPU demand surges; IREN's $2.8B deal win signals robust AI infrastructure tailwinds."
-    },
-    {
       "ticker": "NVDA",
       "name": "NVIDIA Corp.",
-      "price": 203.81,
-      "change_pct": 0.49,
-      "reasoning": "Chipmakers rebounding after last week's selloff; NVDA holds steady as AI chip sentiment recovers."
+      "price": 209.53,
+      "change_pct": -2.0,
+      "reasoning": "Deutsche Bank raised PT to $220; AI chip leader holds amid broad Mag 7 selloff on GOOGL/TSLA earnings."
+    },
+    {
+      "ticker": "CRWV",
+      "name": "CoreWeave Inc.",
+      "price": 85.05,
+      "change_pct": -2.5,
+      "reasoning": "CoreWeave AI cloud central to spending debate; active trading day post-GOOGL earnings disappointment."
     },
     {
       "ticker": "NEE",
       "name": "NextEra Energy Inc.",
-      "price": 88.49,
-      "change_pct": -0.35,
-      "reasoning": "Clean energy with Buy consensus; AI data center power demand supports long-term growth case."
+      "price": 89.94,
+      "change_pct": 0.59,
+      "reasoning": "NextEra reports Q2 earnings Jul 24; renewable leader near highs, defensive haven in today's tech selloff."
     }
   ]
 }
