@@ -1,39 +1,40 @@
 {
-  "updated_at": "2026-07-24T21:00:00Z",
+  "updated_at": "2026-07-25T21:00:00Z",
   "watchlist": [
     { "ticker": "AMD",    "name": "Advanced Micro Devices",     "price": 539.69, "change_pct":  0.00 },
-    { "ticker": "CRM",    "name": "Salesforce Inc.",            "price": 161.97, "change_pct":  3.23 },
-    { "ticker": "RDDT",   "name": "Reddit Inc.",                "price": 163.00, "change_pct": -3.40 },
-    { "ticker": "NFLX",   "name": "Netflix Inc.",               "price":  70.21, "change_pct":  1.91 },
-    { "ticker": "AOF.DE", "name": "ATOSS Software SE (EUR)",    "price":  73.70, "change_pct": -5.75 },
-    { "ticker": "ORGN",   "name": "Origin Materials Inc.",      "price":   0.95, "change_pct": -4.03 },
-    { "ticker": "AARD",   "name": "Aardvark Therapeutics Inc.", "price":   5.70, "change_pct":-10.80 }
+    { "ticker": "CRM",    "name": "Salesforce Inc.",            "price": 157.74, "change_pct": -3.23 },
+    { "ticker": "RDDT",   "name": "Reddit Inc.",                "price": 166.10, "change_pct": -1.56 },
+    { "ticker": "NFLX",   "name": "Netflix Inc.",               "price":  70.21, "change_pct":  1.92 },
+    { "ticker": "AOF.DE", "name": "ATOSS Software SE (EUR)",    "price":  71.50, "change_pct": -1.65 },
+    { "ticker": "ORGN",   "name": "Origin Materials Inc.",      "price":   0.95, "change_pct":  0.00 },
+    { "ticker": "AARD",   "name": "Aardvark Therapeutics Inc.", "price":   5.18, "change_pct":  8.14 }
   ],
   "sector_picks": [
-    { "ticker": "NOW",  "name": "ServiceNow Inc.",                    "price":  94.52, "change_pct": 2.81, "sector": "Tech" },
-    { "ticker": "XLRE", "name": "Real Estate Select Sector SPDR ETF", "price":  45.48, "change_pct": 2.20, "sector": "ETF"  }
+    { "ticker": "SMCI", "name": "Super Micro Computer",    "price":  30.10, "change_pct":  -3.59, "sector": "Tech" },
+    { "ticker": "MU",   "name": "Micron Technology",       "price": 920.95, "change_pct":  -6.99, "sector": "Tech" },
+    { "ticker": "DRAM", "name": "Roundhill Memory ETF",    "price":  53.32, "change_pct":  -8.75, "sector": "ETF"  }
   ],
   "claude_picks": [
     {
       "ticker": "NVDA",
       "name": "NVIDIA Corp.",
-      "price": 206.44,
-      "change_pct": -1.50,
-      "reasoning": "Holds $5T market cap; AI GPU demand intact despite semiconductor sector falling 4.4% today."
+      "price": 206.84,
+      "change_pct": -0.94,
+      "reasoning": "AI chip bellwether: memory sector cooling today but Blackwell demand outlook intact; dip may be entry."
     },
     {
       "ticker": "CRWV",
       "name": "CoreWeave Inc.",
-      "price": 74.58,
-      "change_pct": 2.11,
-      "reasoning": "AI cloud GPU provider gains as Big Tech capex hikes confirm sustained data-center demand."
+      "price": 71.88,
+      "change_pct": -8.87,
+      "reasoning": "Fell sharply on AI funding gap fears; high-volatility infra play with 13%+ weekly swings both ways."
     },
     {
       "ticker": "NEE",
       "name": "NextEra Energy Inc.",
-      "price": 89.19,
-      "change_pct": -0.67,
-      "reasoning": "Q2 EPS beat by 6.5% on clean energy growth; revenue miss and raised capex guide weigh short-term."
+      "price": 84.97,
+      "change_pct": -1.01,
+      "reasoning": "Defensive clean-energy utility holding steady; renewable power pipeline supports long-term demand story."
     }
   ]
 }
