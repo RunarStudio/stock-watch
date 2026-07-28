@@ -1,47 +1,40 @@
 {
-  "updated_at": "2026-07-27T21:00:00Z",
+  "updated_at": "2026-07-28T17:00:00Z",
   "watchlist": [
-    { "ticker": "AMD",    "name": "Advanced Micro Devices",        "price": 479.24, "change_pct": -8.18 },
-    { "ticker": "CRM",    "name": "Salesforce Inc.",               "price": 172.44, "change_pct":  5.36 },
-    { "ticker": "RDDT",   "name": "Reddit Inc.",                   "price": 168.73, "change_pct":  0.00 },
-    { "ticker": "NFLX",   "name": "Netflix Inc.",                  "price":  70.09, "change_pct": -0.17 },
-    { "ticker": "AOF.DE", "name": "ATOSS Software SE (EUR)",       "price":  71.50, "change_pct": -6.04 },
-    { "ticker": "ORGN",   "name": "Origin Materials Inc.",         "price":   0.95, "change_pct":  0.00 },
-    { "ticker": "AARD",   "name": "Aardvark Therapeutics Inc.",    "price":   5.70, "change_pct":  1.42 }
+    { "ticker": "AMD",    "name": "Advanced Micro Devices",        "price": 475.76, "change_pct":  -8.85 },
+    { "ticker": "CRM",    "name": "Salesforce Inc.",               "price": 182.97, "change_pct":   5.40 },
+    { "ticker": "RDDT",   "name": "Reddit Inc.",                   "price": 176.88, "change_pct":  -1.31 },
+    { "ticker": "NFLX",   "name": "Netflix Inc.",                  "price":  73.55, "change_pct":   3.61 },
+    { "ticker": "AOF.DE", "name": "ATOSS Software SE (EUR)",       "price":  73.70, "change_pct":  -5.75 },
+    { "ticker": "ORGN",   "name": "Origin Materials Inc.",         "price":   0.95, "change_pct":   0.00 },
+    { "ticker": "AARD",   "name": "Aardvark Therapeutics Inc.",    "price":   5.70, "change_pct":  10.04 }
   ],
   "sector_picks": [
-    { "ticker": "WGMI", "name": "CoinShares Bitcoin Mining ETF",   "price":  53.65, "change_pct": 12.70, "sector": "ETF"  },
-    { "ticker": "AMD",  "name": "Advanced Micro Devices",          "price": 479.24, "change_pct": -8.18, "sector": "Tech" },
-    { "ticker": "NVDA", "name": "NVIDIA Corp.",                    "price": 196.43, "change_pct": -3.46, "sector": "Tech" }
+    { "ticker": "AAPL", "name": "Apple Inc.",                       "price": 340.08, "change_pct":  0.94, "sector": "Tech" },
+    { "ticker": "SMH",  "name": "VanEck Semiconductor ETF",         "price": 531.67, "change_pct": -3.08, "sector": "ETF"  },
+    { "ticker": "SCHD", "name": "Schwab U.S. Dividend Equity ETF",  "price":  33.88, "change_pct":  1.30, "sector": "ETF"  }
   ],
   "claude_picks": [
     {
       "ticker": "NVDA",
       "name": "NVIDIA Corp.",
-      "price": 196.43,
-      "change_pct": -3.46,
-      "reasoning": "Down 3.5% on circular-AI-financing fears as Nvidia backs $250B OpenAI deal; watch pre-earnings."
-    },
-    {
-      "ticker": "CRWV",
-      "name": "CoreWeave Inc.",
-      "price": 70.63,
-      "change_pct": -1.73,
-      "reasoning": "Down 28% over the month as Meta's in-house compute cloud threatens CoreWeave's GPU rental model."
+      "price": 196.08,
+      "change_pct": -5.43,
+      "reasoning": "Chip stocks broadly sold off on AI valuation concerns, but NVDA remains the core AI infrastructure play."
     },
     {
       "ticker": "NEE",
       "name": "NextEra Energy Inc.",
-      "price": 88.84,
-      "change_pct": -1.05,
-      "reasoning": "Mild dip to $88 near 52-week mid; AI data-center power demand underpins clean-energy long thesis."
+      "price": 89.57,
+      "change_pct": 0.83,
+      "reasoning": "Defensive utility gaining traction as investors rotate from volatile tech into dividend-yielding clean energy."
     },
     {
-      "ticker": "AOF.DE",
-      "name": "ATOSS Software SE",
-      "price": 71.50,
-      "change_pct": -6.04,
-      "reasoning": "Gives back Friday's 10% spike; SaaS workforce-management fundamentals unchanged on Xetra."
+      "ticker": "CRWV",
+      "name": "CoreWeave Inc.",
+      "price": 67.00,
+      "change_pct": -5.35,
+      "reasoning": "Down 30% in a month amid AI cloud valuation contraction; notable risk as Nvidia-linked AI infra thesis is tested."
     }
   ]
 }
