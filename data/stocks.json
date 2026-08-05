@@ -1,40 +1,40 @@
 {
-  "updated_at": "2026-08-04T21:00:00Z",
+  "updated_at": "2026-08-05T17:00:00Z",
   "watchlist": [
-    { "ticker": "AMD",    "name": "Advanced Micro Devices",        "price": 527.20, "change_pct":  8.78 },
-    { "ticker": "CRM",    "name": "Salesforce Inc.",               "price": 186.38, "change_pct":  1.50 },
-    { "ticker": "RDDT",   "name": "Reddit Inc.",                   "price": 160.37, "change_pct":  9.98 },
-    { "ticker": "NFLX",   "name": "Netflix Inc.",                  "price":  72.58, "change_pct":  2.26 },
-    { "ticker": "AOF.DE", "name": "ATOSS Software SE (EUR)",       "price":  71.50, "change_pct": -1.65 },
-    { "ticker": "ORGN",   "name": "Origin Materials Inc. (OTC)",   "price":   0.94, "change_pct":  8.62 },
-    { "ticker": "AARD",   "name": "Aardvark Therapeutics Inc.",    "price":   5.70, "change_pct":  1.42 }
+    { "ticker": "AMD",    "name": "Advanced Micro Devices",        "price": 488.30, "change_pct":  -5.80 },
+    { "ticker": "CRM",    "name": "Salesforce Inc.",               "price": 190.99, "change_pct":   2.71 },
+    { "ticker": "RDDT",   "name": "Reddit Inc.",                   "price": 161.30, "change_pct":  -3.13 },
+    { "ticker": "NFLX",   "name": "Netflix Inc.",                  "price":  75.47, "change_pct":   2.58 },
+    { "ticker": "AOF.DE", "name": "ATOSS Software SE (EUR)",       "price":  71.50, "change_pct":  -1.65 },
+    { "ticker": "ORGN",   "name": "Origin Materials Inc.",         "price":   1.43, "change_pct":  -4.67 },
+    { "ticker": "AARD",   "name": "Aardvark Therapeutics Inc.",    "price":   5.70, "change_pct":   1.42 }
   ],
   "sector_picks": [
-    { "ticker": "CRWV", "name": "CoreWeave Inc.",          "price":  84.32, "change_pct": 11.20, "sector": "Tech" },
-    { "ticker": "AMD",  "name": "Advanced Micro Devices",  "price": 527.20, "change_pct":  8.78, "sector": "Tech" },
-    { "ticker": "QQQ",  "name": "Invesco QQQ Trust",       "price": 706.00, "change_pct":  2.69, "sector": "ETF"  }
+    { "ticker": "BSP",  "name": "Bending Spoons SpA",         "price":  45.36, "change_pct": 21.12, "sector": "Tech" },
+    { "ticker": "ANET", "name": "Arista Networks Inc.",        "price": 380.50, "change_pct":  4.00, "sector": "Tech" },
+    { "ticker": "SPCQ", "name": "Defiance 2X Short SpaceX ETF", "price": 24.83, "change_pct": 21.03, "sector": "ETF"  }
   ],
   "claude_picks": [
     {
-      "ticker": "CRWV",
-      "name": "CoreWeave Inc.",
-      "price": 84.32,
-      "change_pct": 11.20,
-      "reasoning": "ARK Invest added shares Aug 1; surging +11% ahead of Q2 earnings on Aug 11."
-    },
-    {
       "ticker": "NVDA",
       "name": "NVIDIA Corp.",
-      "price": 211.75,
-      "change_pct": 2.93,
-      "reasoning": "Reclaimed $210 as AI demand outweighs financing concerns; earnings due Aug 26."
+      "price": 218.29,
+      "change_pct": 3.00,
+      "reasoning": "SpaceX named NVDA exclusive AI chip supplier for Starmind orbital compute program; AMD dropped ~6%."
+    },
+    {
+      "ticker": "CRWV",
+      "name": "CoreWeave Inc.",
+      "price": 91.90,
+      "change_pct": 7.16,
+      "reasoning": "CoreWeave surges as NVDA/SpaceX exclusive deal drives AI cloud infrastructure demand."
     },
     {
       "ticker": "NEE",
       "name": "NextEra Energy Inc.",
-      "price": 86.35,
-      "change_pct": -0.23,
-      "reasoning": "Flat amid broad tech rally; largest US renewable utility offers defensive dividend stability."
+      "price": 87.20,
+      "change_pct": 0.35,
+      "reasoning": "Holds steady amid tech volatility; AI power demand tailwinds support the largest US renewable utility."
     }
   ]
 }
