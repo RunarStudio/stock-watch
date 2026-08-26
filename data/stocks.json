@@ -1,41 +1,65 @@
 {
-  "updated_at": "2026-08-21T21:00:00Z",
+  "updated_at": "2026-08-26T21:00:00Z",
   "watchlist": [
-    { "ticker": "AMD",    "name": "Advanced Micro Devices",      "price": 470.63, "change_pct":  0.38 },
-    { "ticker": "CRM",    "name": "Salesforce Inc.",             "price": 207.65, "change_pct":  0.30 },
-    { "ticker": "RDDT",   "name": "Reddit Inc.",                 "price": 151.71, "change_pct": -4.13 },
-    { "ticker": "NFLX",   "name": "Netflix Inc.",                "price":  80.17, "change_pct": -0.06 },
-    { "ticker": "AOF.DE", "name": "ATOSS Software SE (EUR)",     "price": 107.40, "change_pct": -1.57 },
-    { "ticker": "ORGN",   "name": "Origin Materials Inc.",       "price":   1.43, "change_pct": -4.67 },
-    { "ticker": "AARD",   "name": "Aardvark Therapeutics Inc.",  "price":   5.70, "change_pct":  1.42 }
+    { "ticker": "AMD",    "name": "Advanced Micro Devices",     "price": 479.18, "change_pct":  4.90 },
+    { "ticker": "CRM",    "name": "Salesforce Inc.",            "price": 203.61, "change_pct": -2.11 },
+    { "ticker": "RDDT",   "name": "Reddit Inc.",                "price": 151.71, "change_pct": -0.65 },
+    { "ticker": "NFLX",   "name": "Netflix Inc.",               "price":  82.23, "change_pct":  2.77 },
+    { "ticker": "AOF.DE", "name": "ATOSS Software SE",          "price":  90.80, "change_pct": 15.40 },
+    { "ticker": "ORGN",   "name": "Origin Materials Inc.",      "price":   1.38, "change_pct": -3.50 },
+    { "ticker": "AARD",   "name": "Aardvark Therapeutics Inc.", "price":   7.05, "change_pct": -0.42 }
   ],
   "sector_picks": [
-    { "ticker": "APP",  "name": "AppLovin Corp.",           "price": 298.50, "change_pct": -2.30, "sector": "Tech" },
-    { "ticker": "SPCX", "name": "SpaceX Inc.",              "price": 135.42, "change_pct":  1.10, "sector": "Tech" },
-    { "ticker": "QQQ",  "name": "Invesco QQQ Trust",        "price": 510.50, "change_pct":  0.36, "sector": "ETF" },
-    { "ticker": "IWM",  "name": "iShares Russell 2000 ETF", "price": 230.80, "change_pct":  0.68, "sector": "ETF" }
+    {
+      "ticker": "AMD",
+      "name": "Advanced Micro Devices",
+      "price": 479.18,
+      "change_pct": 4.90,
+      "sector": "Tech"
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms Inc.",
+      "price": 577.35,
+      "change_pct": 2.00,
+      "sector": "Tech"
+    },
+    {
+      "ticker": "QQQ",
+      "name": "Invesco QQQ Trust",
+      "price": 710.60,
+      "change_pct": 0.27,
+      "sector": "ETF"
+    },
+    {
+      "ticker": "XLK",
+      "name": "Technology Select Sector SPDR ETF",
+      "price": 255.30,
+      "change_pct": 0.47,
+      "sector": "ETF"
+    }
   ],
   "claude_picks": [
     {
       "ticker": "NVDA",
       "name": "NVIDIA Corp.",
-      "price": 216.85,
-      "change_pct": 0.00,
-      "reasoning": "AI chip demand remains resilient; flat day at low volume signals consolidation before next earnings catalyst."
-    },
-    {
-      "ticker": "NEE",
-      "name": "NextEra Energy Inc.",
-      "price": 86.75,
-      "change_pct": 2.24,
-      "reasoning": "AI-driven data center power demand underpins clean energy growth; strong capacity expansion pipeline through 2028."
+      "price": 212.51,
+      "change_pct": 0.60,
+      "reasoning": "Reports Q2 FY2027 earnings after close today, snapping a 7-day losing streak; AI demand guidance is key."
     },
     {
       "ticker": "CRWV",
       "name": "CoreWeave Inc.",
-      "price": 88.28,
-      "change_pct": -1.65,
-      "reasoning": "CoreWeave pullback in AI cloud infra; strong position as hyperscalers accelerate GPU cluster investment."
+      "price": 89.03,
+      "change_pct": 0.80,
+      "reasoning": "AI cloud infrastructure leader positioned to rally on strong Nvidia earnings catalyst after today's close."
+    },
+    {
+      "ticker": "NEE",
+      "name": "NextEra Energy Inc.",
+      "price": 84.22,
+      "change_pct": 0.14,
+      "reasoning": "Steady clean-energy compounder; data center power demand and rate-cut expectations lift the utilities sector."
     }
   ]
 }
