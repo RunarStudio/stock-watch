@@ -1,40 +1,40 @@
 {
-  "updated_at": "2026-09-12T17:00:00Z",
+  "updated_at": "2026-09-13T17:00:00Z",
   "watchlist": [
-    { "ticker": "AMD", "name": "Advanced Micro Devices", "price": 515.78, "change_pct": 2.1 },
-    { "ticker": "CRM", "name": "Salesforce Inc.", "price": 247.55, "change_pct": 0.9 },
-    { "ticker": "RDDT", "name": "Reddit Inc.", "price": 153.00, "change_pct": -2.1 },
-    { "ticker": "NFLX", "name": "Netflix Inc.", "price": 77.40, "change_pct": -1.2 },
+    { "ticker": "AMD", "name": "Advanced Micro Devices", "price": 516.13, "change_pct": 2.49 },
+    { "ticker": "CRM", "name": "Salesforce Inc.", "price": 247.72, "change_pct": 1.94 },
+    { "ticker": "RDDT", "name": "Reddit Inc.", "price": 157.43, "change_pct": 1.34 },
+    { "ticker": "NFLX", "name": "Netflix Inc.", "price": 77.40, "change_pct": 1.83 },
     { "ticker": "AOF.DE", "name": "ATOSS Software SE", "price": 71.50, "change_pct": -1.65 },
-    { "ticker": "ORGN", "name": "Origin Materials Inc.", "price": 0.95, "change_pct": 0.0 },
-    { "ticker": "AARD", "name": "Aardvark Therapeutics Inc.", "price": 4.36, "change_pct": 0.0 }
+    { "ticker": "ORGN", "name": "Origin Materials Inc.", "price": 0.95, "change_pct": 0.00 },
+    { "ticker": "AARD", "name": "Aardvark Therapeutics Inc.", "price": 5.70, "change_pct": 1.42 }
   ],
   "sector_picks": [
-    { "ticker": "NVDA", "name": "NVIDIA Corp.", "price": 218.29, "change_pct": 0.3, "sector": "Tech" },
-    { "ticker": "AMD", "name": "Advanced Micro Devices", "price": 515.78, "change_pct": 2.1, "sector": "Tech" },
-    { "ticker": "QQQ", "name": "Invesco QQQ Trust", "price": 521.50, "change_pct": 0.02, "sector": "ETF" }
+    { "ticker": "AMD", "name": "Advanced Micro Devices", "price": 516.13, "change_pct": 2.49, "sector": "Tech" },
+    { "ticker": "CRM", "name": "Salesforce Inc.", "price": 247.72, "change_pct": 1.94, "sector": "Tech" },
+    { "ticker": "QQQ", "name": "Invesco QQQ Trust", "price": 714.88, "change_pct": 0.87, "sector": "ETF" }
   ],
   "claude_picks": [
     {
       "ticker": "NVDA",
       "name": "NVIDIA Corp.",
       "price": 218.29,
-      "change_pct": 0.3,
-      "reasoning": "Semiconductor sector rallies as GPT-6 Astra launch drives surging AI chip inference demand."
+      "change_pct": -0.03,
+      "reasoning": "AMD's 2.5% surge lifts chip sector; NVDA analysts see ~50% upside to avg $327 price target."
     },
     {
       "ticker": "CRWV",
       "name": "CoreWeave Inc.",
-      "price": 89.12,
-      "change_pct": 0.0,
-      "reasoning": "Cloud AI infrastructure at 41% below 52-week high; 26 analysts rate Buy at a contrarian discount."
+      "price": 88.99,
+      "change_pct": -0.15,
+      "reasoning": "AI cloud infrastructure consolidating; CoreWeave well-positioned for sustained hyperscaler demand."
     },
     {
       "ticker": "NEE",
       "name": "NextEra Energy Inc.",
-      "price": 82.13,
-      "change_pct": 0.5,
-      "reasoning": "Clean energy leader at multi-year highs; AI data center power demand accelerates renewable buildout."
+      "price": 82.31,
+      "change_pct": -0.16,
+      "reasoning": "Stable clean energy leader; rate sensitivity may ease if Fed signals a pause soon."
     }
   ]
 }
