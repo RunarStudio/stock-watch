@@ -1,41 +1,42 @@
 {
-  "updated_at": "2026-09-17T21:00:00Z",
+  "updated_at": "2026-09-18T21:00:00Z",
   "watchlist": [
-    { "ticker": "AMD", "name": "Advanced Micro Devices", "price": 543.47, "change_pct": 6.05 },
-    { "ticker": "CRM", "name": "Salesforce Inc.", "price": 250.54, "change_pct": 0.00 },
-    { "ticker": "RDDT", "name": "Reddit Inc.", "price": 157.60, "change_pct": -4.10 },
-    { "ticker": "NFLX", "name": "Netflix Inc.", "price": 75.95, "change_pct": -0.62 },
-    { "ticker": "AOF.DE", "name": "ATOSS Software SE", "price": 91.20, "change_pct": 0.33 },
+    { "ticker": "AMD", "name": "Advanced Micro Devices", "price": 557.01, "change_pct": 2.49 },
+    { "ticker": "CRM", "name": "Salesforce Inc.", "price": 256.00, "change_pct": 2.18 },
+    { "ticker": "RDDT", "name": "Reddit Inc.", "price": 151.56, "change_pct": -3.83 },
+    { "ticker": "NFLX", "name": "Netflix Inc.", "price": 72.07, "change_pct": -3.47 },
+    { "ticker": "AOF.DE", "name": "ATOSS Software SE", "price": 92.90, "change_pct": 1.64 },
     { "ticker": "ORGN", "name": "Origin Materials", "price": 0.95, "change_pct": 0.00 },
-    { "ticker": "AARD", "name": "Aardvark Therapeutics", "price": 4.36, "change_pct": -38.24 }
+    { "ticker": "AARD", "name": "Aardvark Therapeutics", "price": 5.18, "change_pct": 8.14 }
   ],
   "sector_picks": [
-    { "ticker": "AMD", "name": "Advanced Micro Devices", "price": 543.47, "change_pct": 6.05, "sector": "Tech" },
-    { "ticker": "NVDA", "name": "NVIDIA Corp.", "price": 212.17, "change_pct": -0.02, "sector": "Tech" },
-    { "ticker": "QQQ", "name": "Invesco QQQ Trust", "price": 715.93, "change_pct": -0.01, "sector": "ETF" },
-    { "ticker": "SPY", "name": "SPDR S&P 500 ETF Trust", "price": 764.91, "change_pct": 0.01, "sector": "ETF" }
+    { "ticker": "SNDK", "name": "SanDisk Corp.", "price": 47.20, "change_pct": 6.46, "sector": "Tech" },
+    { "ticker": "STX", "name": "Seagate Technology", "price": 107.00, "change_pct": 3.85, "sector": "Tech" },
+    { "ticker": "QQQ", "name": "Invesco QQQ Trust", "price": 716.37, "change_pct": 0.06, "sector": "ETF" },
+    { "ticker": "SPY", "name": "SPDR S&P 500 ETF Trust", "price": 765.98, "change_pct": 0.14, "sector": "ETF" },
+    { "ticker": "XLU", "name": "Utilities Select Sector SPDR", "price": 91.20, "change_pct": 0.25, "sector": "ETF" }
   ],
   "claude_picks": [
     {
       "ticker": "NVDA",
       "name": "NVIDIA Corp.",
-      "price": 212.17,
-      "change_pct": -0.02,
-      "reasoning": "Holds steady as AMD leads chip sector up 6%; Vera Rubin GPU deployments signal accelerating AI infrastructure capex."
-    },
-    {
-      "ticker": "CRWV",
-      "name": "CoreWeave Inc.",
-      "price": 84.50,
-      "change_pct": -5.42,
-      "reasoning": "Activated first multi-rack Vera Rubin NVL72 cluster on CoreWeave Cloud, cementing its AI GPU cloud leadership."
+      "price": 221.50,
+      "change_pct": 3.55,
+      "reasoning": "Chip sector broadly recovered today; AI data center orders from hyperscalers remain robust through year-end."
     },
     {
       "ticker": "AOF.DE",
       "name": "ATOSS Software SE",
-      "price": 91.20,
-      "change_pct": 0.33,
-      "reasoning": "Deutsche Bank raised price target; European workforce-management software demand remains a steady growth story."
+      "price": 92.90,
+      "change_pct": 1.64,
+      "reasoning": "European workforce software up 1.6%; stable recurring revenue in tight labor markets makes it a steady compounder."
+    },
+    {
+      "ticker": "CRWV",
+      "name": "CoreWeave Inc.",
+      "price": 82.50,
+      "change_pct": 1.96,
+      "reasoning": "$3.7B convertible note offering signals strong GPU cloud demand; lock-up expiry Sept 24 is near-term watch."
     }
   ]
 }
