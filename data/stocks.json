@@ -1,41 +1,40 @@
 {
-  "updated_at": "2026-09-19T21:00:00Z",
+  "updated_at": "2026-09-20T21:00:00Z",
   "watchlist": [
-    { "ticker": "AMD",    "name": "Advanced Micro Devices",   "price": 559.82, "change_pct":  0.50 },
-    { "ticker": "CRM",    "name": "Salesforce Inc.",           "price": 238.72, "change_pct": -6.75 },
-    { "ticker": "RDDT",   "name": "Reddit Inc.",               "price": 152.20, "change_pct": -0.89 },
-    { "ticker": "NFLX",   "name": "Netflix Inc.",              "price":  71.79, "change_pct": -4.67 },
+    { "ticker": "AMD",    "name": "Advanced Micro Devices",   "price": 559.82, "change_pct":  2.70 },
+    { "ticker": "CRM",    "name": "Salesforce Inc.",           "price": 242.00, "change_pct":  1.38 },
+    { "ticker": "RDDT",   "name": "Reddit Inc.",               "price": 157.60, "change_pct": -1.27 },
+    { "ticker": "NFLX",   "name": "Netflix Inc.",              "price":  77.50, "change_pct":  7.95 },
     { "ticker": "AOF.DE", "name": "ATOSS Software SE",         "price":  92.90, "change_pct":  1.64 },
-    { "ticker": "ORGN",   "name": "Origin Materials",          "price":   0.95, "change_pct":  0.00 },
+    { "ticker": "ORGN",   "name": "Origin Materials",          "price":   1.43, "change_pct": -4.67 },
     { "ticker": "AARD",   "name": "Aardvark Therapeutics",     "price":   5.70, "change_pct":  1.42 }
   ],
   "sector_picks": [
-    { "ticker": "CRWV", "name": "CoreWeave Inc.",              "price":  89.07, "change_pct": -0.11, "sector": "Tech" },
-    { "ticker": "NVDA", "name": "NVIDIA Corp.",                "price": 222.06, "change_pct":  0.25, "sector": "Tech" },
-    { "ticker": "QQQ",  "name": "Invesco QQQ Trust",           "price": 717.50, "change_pct":  0.16, "sector": "ETF"  },
-    { "ticker": "SOXX", "name": "iShares Semiconductor ETF",   "price": 543.50, "change_pct":  0.28, "sector": "ETF"  }
+    { "ticker": "QQQ",  "name": "Invesco QQQ Trust",                "price": 721.45, "change_pct":  0.55, "sector": "ETF"  },
+    { "ticker": "SOXL", "name": "Direxion Daily Semi Bull 3X",      "price": 123.10, "change_pct":  5.50, "sector": "ETF"  },
+    { "ticker": "CRWV", "name": "CoreWeave Inc.",                   "price":  81.31, "change_pct": -8.71, "sector": "Tech" }
   ],
   "claude_picks": [
     {
       "ticker": "NVDA",
       "name": "NVIDIA Corp.",
-      "price": 222.06,
-      "change_pct": 0.25,
-      "reasoning": "Semiconductor rebound holds near multi-week highs; AI data-center capex cycle intact heading into Q4."
+      "price": 222.27,
+      "change_pct": 0.10,
+      "reasoning": "59/60 analysts rate Buy; Deutsche Bank raised target to $220; 52-week high at $236.54 in reach."
+    },
+    {
+      "ticker": "CRWV",
+      "name": "CoreWeave Inc.",
+      "price": 81.31,
+      "change_pct": -8.71,
+      "reasoning": "Sharp 8% drop on 2× volume; key support test after $3B offering — watch for AI cloud thesis inflection."
     },
     {
       "ticker": "NEE",
       "name": "NextEra Energy Inc.",
       "price": 80.55,
-      "change_pct": 0.20,
-      "reasoning": "Volume running 2x daily average; rate-sensitive clean energy gains as Treasury yields ease."
-    },
-    {
-      "ticker": "CRWV",
-      "name": "CoreWeave Inc.",
-      "price": 89.07,
-      "change_pct": -0.11,
-      "reasoning": "$3B offering digested; GPU cloud infrastructure demand narrative intact for AI spending Q4."
+      "change_pct": 0.10,
+      "reasoning": "AI data-center buildout accelerates clean energy demand; reliable dividend anchors the position."
     }
   ]
 }
