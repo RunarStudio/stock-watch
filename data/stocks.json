@@ -1,40 +1,47 @@
 {
-  "updated_at": "2026-09-24T21:00:00Z",
+  "updated_at": "2026-09-25T21:00:00Z",
   "watchlist": [
-    { "ticker": "AMD", "name": "Advanced Micro Devices", "price": 614.61, "change_pct": -1.47 },
-    { "ticker": "CRM", "name": "Salesforce Inc.", "price": 239.71, "change_pct": 0.90 },
+    { "ticker": "AMD", "name": "Advanced Micro Devices", "price": 626.22, "change_pct": -0.48 },
+    { "ticker": "CRM", "name": "Salesforce Inc.", "price": 237.53, "change_pct": -0.91 },
     { "ticker": "RDDT", "name": "Reddit Inc.", "price": 152.69, "change_pct": 0.47 },
-    { "ticker": "NFLX", "name": "Netflix Inc.", "price": 71.36, "change_pct": -1.11 },
-    { "ticker": "AOF.DE", "name": "ATOSS Software SE", "price": 73.70, "change_pct": -5.75 },
+    { "ticker": "NFLX", "name": "Netflix Inc.", "price": 71.72, "change_pct": 0.00 },
+    { "ticker": "AOF.DE", "name": "ATOSS Software SE", "price": 73.70, "change_pct": 0.00 },
     { "ticker": "ORGN", "name": "Origin Materials Inc.", "price": 1.43, "change_pct": -4.67 },
     { "ticker": "AARD", "name": "Aardvark Therapeutics Inc.", "price": 5.70, "change_pct": 1.42 }
   ],
   "sector_picks": [
-    { "ticker": "IONQ", "name": "IonQ Inc.", "price": 42.54, "change_pct": 4.42, "sector": "Tech" },
-    { "ticker": "ARKK", "name": "ARK Innovation ETF", "price": 91.27, "change_pct": 1.67, "sector": "ETF" },
-    { "ticker": "QQQ", "name": "Invesco QQQ Trust", "price": 741.21, "change_pct": 0.00, "sector": "ETF" }
+    { "ticker": "AKAM", "name": "Akamai Technologies", "price": 110.41, "change_pct": 17.00, "sector": "Tech" },
+    { "ticker": "QQQ", "name": "Invesco QQQ Trust", "price": 745.18, "change_pct": 0.55, "sector": "ETF" },
+    { "ticker": "IWM", "name": "iShares Russell 2000 ETF", "price": 263.81, "change_pct": 0.92, "sector": "ETF" }
   ],
   "claude_picks": [
     {
-      "ticker": "CRWV",
-      "name": "CoreWeave Inc.",
-      "price": 90.59,
-      "change_pct": 3.89,
-      "reasoning": "AI cloud infrastructure demand lifts CRWV +3.9%; leading GPU compute play in the current AI buildout cycle."
-    },
-    {
       "ticker": "NVDA",
       "name": "NVIDIA Corp.",
-      "price": 225.51,
-      "change_pct": 0.00,
-      "reasoning": "New NVIDIA-IonQ quantum-GPU partnership announced today; positions NVDA at the AI+quantum convergence."
+      "price": 224.58,
+      "change_pct": -0.41,
+      "reasoning": "AI chip leader near 52-week high; 58 analysts rate Strong Buy with avg price target of $327."
+    },
+    {
+      "ticker": "CRWV",
+      "name": "CoreWeave Inc.",
+      "price": 87.30,
+      "change_pct": -3.14,
+      "reasoning": "CEO Intrator sold large block of shares Monday, triggering sentiment-driven selloff."
     },
     {
       "ticker": "NEE",
       "name": "NextEra Energy Inc.",
-      "price": 76.71,
-      "change_pct": -2.83,
-      "reasoning": "Rising Treasury yields weigh on utility sector; -2.8% drop may offer dip entry for clean energy exposure."
+      "price": 75.62,
+      "change_pct": -1.82,
+      "reasoning": "Fell as oil prices slid on Hormuz reopening hopes, reducing the clean-energy premium."
+    },
+    {
+      "ticker": "AOF.DE",
+      "name": "ATOSS Software SE",
+      "price": 73.70,
+      "change_pct": 0.00,
+      "reasoning": "European workforce software near 52-week low; analyst consensus target 40% above current price."
     }
   ]
 }
